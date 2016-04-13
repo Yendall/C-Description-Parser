@@ -16,7 +16,20 @@ std::string Filter_Vectors::determiners[] =
 
 std::string Filter_Vectors::top_100_words[] =
 {
-    "be", "and", "of", "in", "to", "have", "it", "I", "for", "you", "he", "with", "on", "do", "say", "they", "at", "but", "we", "from", "not", "by", "she", "or", "as", "go", "can", "who", "get", "if", "would", "make", "about", "know", "will", "up", "one", "time", "year", "so", "think", "when", "them", "me", "people", "take", "out", "into", "just", "see", "him", "come", "could", "now", "than", "like", "how", "then", "two", "want", "way", "look", "first", "also", "new", "because", "day", "use", "man", "find", "here", "thing", "give", "well", "only", "tell", "very", "even", "back", "any", "good", "woman", "through", "us", "life", "child", "work", "down", "may", "after", "should", "call", "world", "over", "school", "still", "try", "last", "ask", "need"
+    "a","at","an","and","any","another","by","be","other","do","what",
+    "the","my","your","his","her","if","its","is","i'll","I","our","of","or",
+    "on","their","this","whose","this","that","these","those","too","to","you",
+    "which","with","why","be", "and", "of", "in", "to", "have", "it", "I", "for", 
+	"you", "he", "with", "on", "do", "say", "they", "at", "but", 
+	"we", "from", "not", "by", "she", "or", "as", "go", "can", "who",
+	 "get", "if", "would", "make", "about", "know", "will", "up", "one", 
+	 "time", "year", "so", "think", "when", "them", "me", "people", "take",
+	  "out", "into", "just", "see", "him", "come", "could", "now", "than", 
+	  "like", "how", "then", "two", "want", "way", "look", "first", "also", 
+	  "new", "because", "day", "use", "man", "find", "here", "thing", "give",
+	   "well", "only", "tell", "very", "even", "back", "any", "good", "woman", 
+	   "through", "us", "life", "child", "work", "down", "may", "after", "should",
+	    "call", "world", "over", "school", "still", "try", "last", "ask", "need"
 };
 
 // Filters the bag of words by removing irrelevant words and concatenating
@@ -29,7 +42,7 @@ std::string filter_irrelevancy(const std::string& token)
     // Transform word to lowercase for easy comparison
     std::transform(new_word.begin(), new_word.end(), new_word.begin(), ::tolower);
     
-    for(const auto& determiner : Filter_Vectors::determiners)
+    for(const auto& determiner : Filter_Vectors::top_100_words)
     {
         if(new_word.compare(determiner) == 0)
         {
