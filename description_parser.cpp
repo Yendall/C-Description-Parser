@@ -1,36 +1,15 @@
 #include <algorithm>
 #include <string>
+#include <vector>
+
 #include "csv_parser.hpp"
 #include "filter_vectors.hpp"
 #include <boost/tokenizer.hpp>
 
 using namespace boost;
 
-std::string Filter_Vectors::determiners[] =
-{
-    "a","at","an","and","any","another","by","be","other","do","what",
-    "the","my","your","his","her","if","its","is","i'll","I","our","of","or",
-    "on","their","this","whose","this","that","these","those","too","to","you",
-    "which","with","why"
-};
-
-std::string Filter_Vectors::top_100_words[] =
-{
-    "a","at","an","and","any","another","by","be","other","do","what",
-    "the","my","your","his","her","if","its","is","i'll","I","our","of","or",
-    "on","their","this","whose","this","that","these","those","too","to","you",
-    "which","with","why","be", "and", "of", "in", "to", "have", "it", "I", "for", 
-	"you", "he", "with", "on", "do", "say", "they", "at", "but", 
-	"we", "from", "not", "by", "she", "or", "as", "go", "can", "who",
-	 "get", "if", "would", "make", "about", "know", "will", "up", "one", 
-	 "time", "year", "so", "think", "when", "them", "me", "people", "take",
-	  "out", "into", "just", "see", "him", "come", "could", "now", "than", 
-	  "like", "how", "then", "two", "want", "way", "look", "first", "also", 
-	  "new", "because", "day", "use", "man", "find", "here", "thing", "give",
-	   "well", "only", "tell", "very", "even", "back", "any", "good", "woman", 
-	   "through", "us", "life", "child", "work", "down", "may", "after", "should",
-	    "call", "world", "over", "school", "still", "try", "last", "ask", "need"
-};
+// Top 100 words vector
+std::vector < STR > top_100_words;
 
 // Filters the bag of words by removing irrelevant words and concatenating
 // the words back into a description.
@@ -42,7 +21,7 @@ std::string filter_irrelevancy(const std::string& token)
     // Transform word to lowercase for easy comparison
     std::transform(new_word.begin(), new_word.end(), new_word.begin(), ::tolower);
     
-    for(const auto& determiner : Filter_Vectors::top_100_words)
+    for(const auto& determiner : top_100_words)
     {
         if(new_word.compare(determiner) == 0)
         {
@@ -115,25 +94,27 @@ void display_map_contents(const STR& input_line, const KEY_VAL_FIELDS& output_ma
 
 int main()
 {
-    
+    // Declare Parser and vector/map variables
     CSV_Parser csv_parser;
-    CSV_FIELDS output_fields;
+    CSV_FIELDS descriptions;
+	CSV_FIELDS top_100;
     STR line;
-    bool status;
-    
-    // Open the test case CSV file
-    std :: ifstream test_file("Data/data.csv");
-    if(test_file.is_open())
+	
+	// Status to track the return value of the CSV Parsers functions
+	bool status;
+	
+    // Open the top 100 words file (subset of determiners)
+    std :: ifstream word_file("Data/top_100_words.csv");
+    if(word_file.is_open())
     {
-        while(getline(test_file, line))
+        while(getline(word_file, line))
         {
-            status = csv_parser.parse_line(line, output_fields);
-            
+            status = csv_parser.parse_line(line, top_100);
             if(status)
             {
-                tokenise_description(output_fields);
-                // display_vector_contents(line,output_fields);
-                output_fields.clear();
+				top_100_words = top_100;
+                // display_vector_contents(line,top_100);
+                top_100.clear();
             }
             else
             {
@@ -141,23 +122,27 @@ int main()
             }
         }
     }
-    
-    // Ignore the header and parse the information into an output map
-    line = "description";
-    CSV_FIELDS header;
-    
-    // Populate the header
-    header.push_back("description");
-    KEY_VAL_FIELDS output_map;
-    status = csv_parser.parse_line(line, header, output_map);
-    if(status)
+	
+    // Open the test case CSV file (subset of descriptions)
+    std :: ifstream description_file("Data/data.csv");
+    if(description_file.is_open())
     {
-        // Print contents to the screen
-        // display_map_contents(line, output_map);
+        while(getline(description_file, line))
+        {
+            status = csv_parser.parse_line(line, descriptions);
+            
+            if(status)
+            {
+                tokenise_description(descriptions);
+                // display_vector_contents(line,descriptions);
+                descriptions.clear();
+            }
+            else
+            {
+                std :: cout << "Error encountered while parsing the input line\n";
+            }
+        }
     }
-    else
-    {
-        std :: cout << "Error encountered while parsing the input line\n";
-    }
+
     return 0;
 }

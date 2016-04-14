@@ -23,11 +23,7 @@ class Filter_Vectors
 		bool tokenise_description(const std::string&);
 		std::string filter_irrelevancy(const CSV_FIELDS&);
 		
-		// Determiner words to filter from a string
-		static std::string determiners[];
 		
-		// Top 100 words in the English language (will need to change
-		// this for Mandarin)
-		static std::string top_100_words[];
+		
 };
 #endif
