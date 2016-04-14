@@ -65,7 +65,6 @@ bool tokenise_description(const CSV_FIELDS& descriptions)
     }
     // Define separator constants which will split the description
     
-    filter_irrelevancy(bag_of_words);
     return false;
 }
 
