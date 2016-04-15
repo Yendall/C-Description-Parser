@@ -3,4 +3,4 @@ Acknowledgements:
 ------
 C++ CSV Parser Header		: Rakesh G. Karanth
 
-C++ Description Parser 		: Max Yendall
+C++ Description Parser 		: Max Yendall & Georgia Clark
