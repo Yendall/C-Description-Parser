@@ -26,7 +26,7 @@ std::string filter_irrelevancy(const std::string& token)
         if(new_word.compare(determiner) == 0)
         {
             new_word = "";
-        }
+        } 
     }
     return new_word;
 }
@@ -52,7 +52,6 @@ bool tokenise_description(const CSV_FIELDS& descriptions)
         for (const auto& token : tokens)
         {
             filtered_word = filter_irrelevancy(token);
-            
             if(filtered_word.compare("") != 0)
             {
                 sentence_construct = sentence_construct + " " + filtered_word;
@@ -123,7 +122,7 @@ int main()
     }
 	
     // Open the test case CSV file (subset of descriptions)
-    std :: ifstream description_file("Data/data.csv");
+    std :: ifstream description_file("Data/Descriptions.csv");
     if(description_file.is_open())
     {
         while(getline(description_file, line))
