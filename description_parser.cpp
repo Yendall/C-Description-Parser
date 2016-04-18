@@ -122,7 +122,7 @@ int main()
     }
 	
     // Open the test case CSV file (subset of descriptions)
-    std :: ifstream description_file("Data/Descriptions.csv");
+    std :: ifstream description_file("Data/Description_Set.csv");
     if(description_file.is_open())
     {
         while(getline(description_file, line))
