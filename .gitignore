@@ -2,3 +2,5 @@
 *.o
 
 description_parser
+
+*.txt

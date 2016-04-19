@@ -19,7 +19,7 @@ class Filter_Vectors
 		// Filter functions
 		void 			init_description_parsing();;
 		bool			parse_keyword_vectors(const CSV_FIELDS&);
-		bool 			tokenise_description(const std::string&);		
+		bool 			tokenise_description();		
 		STR 			filter_irrelevancy(const CSV_FIELDS&);	
 		CSV_FIELDS		parse_csv_file(STR);
 };

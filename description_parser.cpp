@@ -15,39 +15,16 @@ std::vector <STR> top_100_words;
 std::map <int,STR> descriptions_map;
 // Map of labels
 std::map <STR,std::vector<STR> > label_map;
-// Map of descriptions and map frequencies
+// Map of descriptions and map of frequencies
 std::map <int,std::map<STR,int> > frequency_vector;
 
-/* DEBUGGING FUNCTIONS */
-
-// Displays the entire CSV file within the vector as one long string
-void display_vector_contents(const STR& input_line, const CSV_FIELDS& output_fields)
-{
-    CONST_VECTOR_ITR it = output_fields.begin();
-    int i = 0;
-    
-    for( ; it != output_fields.end(); ++it)
-    {
-        std :: cout << "Field [" << i++ << "] - " << *it << "\n";
-    }
-}
-
-// Displays the key->pair mapping of the CSV file
-void display_map_contents(const STR& input_line, const KEY_VAL_FIELDS& output_map)
-{
-    CONST_MAP_ITR it = output_map.begin();
-    for (; it != output_map.end(); ++it)
-    {
-        std :: cout << "Field[ " << it->first << " ] : " << it->second << "\n";
-    }
-}
 void display_frequency()
 {
     MAP_ITR_MAP it = frequency_vector.begin();
-	
+	std::cout << frequency_vector.size() << std::endl;
 	for(; it != frequency_vector.end(); ++it)
 	{
-		std::cout << "Description: " << descriptions_map[it->first] << std::endl;
+		std::cout << "Description index : " << it->first << std::endl;
 		CONST_MAP_ITR_STRINT it_map = it->second.begin();
 		for(; it_map != it->second.end(); ++it_map)
 		{
@@ -64,7 +41,7 @@ void category_frequency(int index_ptr, STR& sentence_construct)
 	
 	MAP_ITR_VEC it = label_map.begin();
 	
-	// Loop through label vector and compare the setence tokens to each word
+	// Loop through label vector and compare the sentence tokens to each word
 	// and update frequency
 	for (; it != label_map.end(); ++it)
 	{	
@@ -74,12 +51,12 @@ void category_frequency(int index_ptr, STR& sentence_construct)
 			{
 				if(token.compare(label_word) == 0)
 				{
+					// std::cout << "Tokens are: " << token << std::endl;
 					frequency_vector[index_ptr][it->first] += 1;
 				}
 			}
 		}
 	}
-	display_frequency();
 }
 
 // Filters the bag of words by removing irrelevant words and concatenating
@@ -104,7 +81,7 @@ std::string filter_irrelevancy(const std::string& token)
 
 // Tokenises the string into a bag of words. The bag of words must maintain
 // order so the description is somewhat linear once it's been manipulated
-bool tokenise_description(const CSV_FIELDS& descriptions)
+bool tokenise_description()
 {
     // Identifier for description map
 	int index_ptr;
@@ -114,7 +91,7 @@ bool tokenise_description(const CSV_FIELDS& descriptions)
 	
 	// Constant map <int, string> interator
     CONST_MAP_ITR_INT it = descriptions_map.begin();
-	
+
 	// Loop through the descriptions map
     for (; it != descriptions_map.end(); ++it)
     {
@@ -132,12 +109,9 @@ bool tokenise_description(const CSV_FIELDS& descriptions)
                 sentence_construct = sentence_construct + " " + filtered_word;
             }
         }
-        /*std::cout << sentence_construct << std::endl;
-        std::cout << std::endl << std::endl;
-        std::cout << "------NEW DESCRIPTION------" << std::endl; */
+
 		category_frequency(index_ptr, sentence_construct);
 		sentence_construct.clear();
-        // Debug: std :: cout << "Field[ " << it->first << " ] : " << it->second << "\n";
     }
     
     return false;
@@ -208,7 +182,7 @@ void init_description_parsing()
 	}
 	
 	// Begin tokenising
-    tokenise_description(descriptions);
+    tokenise_description();
 }
 int main()
 {
@@ -231,6 +205,7 @@ int main()
 	
 	// Begin parsing the description
 	init_description_parsing();
+	display_frequency();
 	
     return 0;
 }
