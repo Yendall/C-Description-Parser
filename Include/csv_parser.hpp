@@ -31,7 +31,11 @@ typedef std :: pair < STR, STR > MAP_ENTRY;
 typedef std :: vector < STR > :: iterator VECTOR_ITR;
 typedef std :: vector < STR > :: const_iterator CONST_VECTOR_ITR;
 typedef std :: map < STR, STR > :: iterator MAP_ITR;
+typedef std :: map < STR, CSV_FIELDS > :: iterator MAP_ITR_VEC;
+typedef std :: map <int,std::map<STR,int> > :: iterator MAP_ITR_MAP;
 typedef std :: map < STR, STR > :: const_iterator CONST_MAP_ITR;
+typedef std :: map < int, STR > :: const_iterator CONST_MAP_ITR_INT;
+typedef std :: map < STR, int > :: const_iterator CONST_MAP_ITR_STRINT;
 
 class CSV_Parser
 {
