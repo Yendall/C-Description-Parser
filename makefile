@@ -1,8 +1,8 @@
 #----------------------------------------------#
-#	Name:		Max Yendall                    #
-#	Runnable:	description_parser             #
-#	Version:	1.0                            #
-#	File:		Makefile                       #
+#	Name:		Max Yendall            #
+#	Runnable:	description_parser     #
+#	Version:	1.0                    #
+#	File:		Makefile               #
 #----------------------------------------------# 
 
 CXX = clang++
