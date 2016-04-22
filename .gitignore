@@ -6,3 +6,5 @@ data_parser
 *.txt
 
 makefile
+
+data_parser
