@@ -19,7 +19,6 @@ std::string remove_punctuation(std::string string)
     for(auto& mark : punctuation)
     {
         string.erase(std::remove(string.begin(), string.end(), mark), string.end());
-        
     }
     
     return string;
