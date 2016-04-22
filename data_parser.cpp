@@ -81,7 +81,7 @@ std::string filter_irrelevancy(const std::string& token)
 
 // Tokenises the string into a bag of words. The bag of words must maintain
 // order so the description is somewhat linear once it's been manipulated
-bool tokenise_description()
+bool tokenise_data()
 {
     // Identifier for description map
 	int index_ptr;
@@ -148,7 +148,7 @@ CSV_FIELDS parse_csv_file(STR path)
 	return csv_return;
 }
 
-void init_description_parsing()
+void parse_data()
 {
     // Declare Parser and vector/map variables
     STR 		line;
@@ -182,7 +182,7 @@ void init_description_parsing()
 	}
 	
 	// Begin tokenising
-    tokenise_description();
+    tokenise_data();
 }
 int main()
 {
@@ -204,7 +204,7 @@ int main()
 	}
 	
 	// Begin parsing the description
-	init_description_parsing();
+	parse_data();
 	display_frequency();
 	
     return 0;
