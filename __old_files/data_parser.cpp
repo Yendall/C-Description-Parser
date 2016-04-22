@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 
-#include "Include/filter_vectors.hpp"
+#include "include/filter_vectors.hpp"
 #include <boost/tokenizer.hpp>
 
 using namespace boost;
@@ -24,7 +24,7 @@ void display_frequency()
 	std::cout << frequency_vector.size() << std::endl;
 	for(; it != frequency_vector.end(); ++it)
 	{
-		std::cout << "Description index : " << it->first << std::endl;
+		std::cout << "Description : " << descriptions_map[it->first] << std::endl;
 		CONST_MAP_ITR_STRINT it_map = it->second.begin();
 		for(; it_map != it->second.end(); ++it_map)
 		{
@@ -33,6 +33,20 @@ void display_frequency()
 		}
 	}
 }
+
+// Remove punctuation from string and return
+/* STR& remove_punctuation(STR& string)
+{
+    char punctuation[] = "()-,:;.!?+'\% ";
+    
+    for(const auto& mark : punctuation)
+    {
+        string.erase(std::remove(string.begin(), string.end(), mark), string.end());
+    }
+    
+    return string;
+} */
+
 // Generates frequency of occuring words in certain tags
 void category_frequency(int index_ptr, STR& sentence_construct)
 {
@@ -41,6 +55,7 @@ void category_frequency(int index_ptr, STR& sentence_construct)
 	
 	MAP_ITR_VEC it = label_map.begin();
 	
+    
 	// Loop through label vector and compare the sentence tokens to each word
 	// and update frequency
 	for (; it != label_map.end(); ++it)
@@ -49,10 +64,15 @@ void category_frequency(int index_ptr, STR& sentence_construct)
 		{
 			for(const auto& token : tokens)
 			{
+                
+                // token = remove_punctuation(token);
+                // std::cout << "Reaches here with token: " << token << std::endl;
 				if(token.compare(label_word) == 0)
 				{
 					// std::cout << "Tokens are: " << token << std::endl;
 					frequency_vector[index_ptr][it->first] += 1;
+                    std::cout << "Label Word: " << label_word << std::endl;
+                    std::cout << frequency_vector[index_ptr][it->first] << std::endl;
 				}
 			}
 		}
@@ -205,7 +225,7 @@ int main()
 	
 	// Begin parsing the description
 	parse_data();
-	display_frequency();
+    display_frequency();
 	
     return 0;
 }
