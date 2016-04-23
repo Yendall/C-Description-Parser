@@ -56,7 +56,7 @@ bool tokenise_data()
     // Define sentence construct and filtered word return strings
     std::string sentence_construct;
     std::string filtered_word;
-	std::string new_token;
+    std::string new_token;
 	// Constant map <int, string> interator
     CONST_MAP_ITR_INT it = data_map.begin();
 
@@ -81,7 +81,7 @@ bool tokenise_data()
                 sentence_construct = sentence_construct + " " + filtered_word;
             }
         }
-        
+        std::cout << "Field: " << sentence_construct << std::endl;
 		sentence_construct.clear();
     }
     
@@ -134,7 +134,7 @@ void parse_data(std::string file)
 	index_ptr = 0;
 	
     // Open the data CSV file
-    std :: ifstream data_file(file);
+    std :: ifstream data_file("data/"+file);
     if(data_file.is_open())
     {
         while(getline(data_file, line))
@@ -166,7 +166,10 @@ void begin_analysis()
 	// Begin parsing the determiner set
 	determiner_set = parse_csv_file("data/determiner_set.csv");
     
-	// Begin parsing the description set
-	parse_data("data/Description_Set.csv");
+	// Begin parsing the sets
+	parse_data("Description_Set.csv");
+    parse_data("Title_Set.csv");
+    parse_data("Activity_Set.csv");
+    
     
 }
