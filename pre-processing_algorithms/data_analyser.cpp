@@ -9,6 +9,8 @@ std::string set_identifier;
 std::map <int,STR> data_map;
 // Condensed Data Map
 std::map <int,STR> condensed_map;
+// Combined Set
+std::vector <STR> combined_set;
 // Determiner Set
 std::vector <STR> determiner_set;
 
@@ -17,34 +19,57 @@ std::vector <STR> determiner_set;
 void output_data()
 {
     // Constant map <int, string> interator
-    CONST_MAP_ITR_INT it = condensed_map.begin();
+    CONST_MAP_ITR_INT it_con = condensed_map.begin();
     
     // Create the output file based on the set_identifier
-    std::ofstream outputCSV("data/condensed_" + set_identifier + ".csv");
+    std::ofstream condensed_outputCSV("data/condensed_" + set_identifier + ".csv");
+    std::ofstream combined_outputCSV("data/combined_" + set_identifier + ".csv");
     
-    for (; it != condensed_map.end(); ++it)
+    for (; it_con != condensed_map.end(); ++it_con)
     {
-        outputCSV << "\"" << it->second << "\"" << ",";
+        condensed_outputCSV << "\"" << it_con->second << "\"" << ",";
     }
     
-    outputCSV.close();
+    for(const auto& word : combined_set)
+    {
+        combined_outputCSV << "\"" << word << "\"" << ",";
+    }
+    
+    condensed_outputCSV.close();
+    combined_outputCSV.close();
+    
     condensed_map.clear();
+    combined_set.clear();
+}
+
+// Checks if string exists in the combined set
+// @return: Boolean value denoting existance
+bool string_exists(std::string string)
+{
+    for(auto& word : combined_set)
+    {
+        if(word.compare(string) == 0)
+        {
+            return true;
+        }
+    }
+    
+    return false;
 }
 
 // Removes punctuation from string
 // @return: Filtered sentence as a string
 std::string remove_punctuation(std::string string)
 {
-    // Punctuation set
-    char punctuation[] = "()-,:;.!?+'\% ";
-
-    // Erase any occurance of punctuation
-    for(auto& mark : punctuation)
-    {
-        string.erase(std::remove(string.begin(), string.end(), mark), string.end());
-    }
+    // Result string
+    std::string result;
     
-    return string;
+    // Using remove_copy_if func to remove ispunct occurences
+    std::remove_copy_if(string.begin(), string.end(),            
+                        std::back_inserter(result),       
+                        std::ptr_fun<int, int>(&std::ispunct)  
+                       );
+    return result;
 }
 
 // Filters the bag of words by removing irrelevant words and concatenating
@@ -101,6 +126,10 @@ bool tokenise_data()
             filtered_word = filter_irrelevancy(new_token);
             if(filtered_word.compare("") != 0)
             {
+                if(!string_exists(new_token))
+                {
+                    combined_set.push_back(new_token);
+                }
                 sentence_construct = sentence_construct + " " + filtered_word;
             }
         }
@@ -202,6 +231,5 @@ void begin_analysis()
     
     // Parse Activity Set
     set_identifier = "activity_set";
-    parse_data("activity_set.csv");
-    
+    parse_data("activity_set.csv"); 
 }
