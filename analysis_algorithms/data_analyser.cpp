@@ -3,10 +3,33 @@
 
 using namespace boost;
 
+// Set Identifier
+std::string set_identifier;
 // Data Map
 std::map <int,STR> data_map;
-// Detemriner Set
+// Condensed Data Map
+std::map <int,STR> condensed_map;
+// Determiner Set
 std::vector <STR> determiner_set;
+
+// Output the data into new condensed files
+// @return: void
+void output_data()
+{
+    // Constant map <int, string> interator
+    CONST_MAP_ITR_INT it = condensed_map.begin();
+    
+    // Create the output file based on the set_identifier
+    std::ofstream outputCSV("data/condensed_" + set_identifier + ".csv");
+    
+    for (; it != condensed_map.end(); ++it)
+    {
+        outputCSV << "\"" << it->second << "\"" << ",";
+    }
+    
+    outputCSV.close();
+    condensed_map.clear();
+}
 
 // Removes punctuation from string
 // @return: Filtered sentence as a string
@@ -81,10 +104,13 @@ bool tokenise_data()
                 sentence_construct = sentence_construct + " " + filtered_word;
             }
         }
-        std::cout << "Field: " << sentence_construct << std::endl;
+        
+        condensed_map[index_ptr] = sentence_construct;
 		sentence_construct.clear();
     }
     
+    // Output the new data to CSV files
+    output_data();
     return true;
 }
 
@@ -166,10 +192,16 @@ void begin_analysis()
 	// Begin parsing the determiner set
 	determiner_set = parse_csv_file("data/determiner_set.csv");
     
-	// Begin parsing the sets
-	parse_data("Description_Set.csv");
-    parse_data("Title_Set.csv");
-    parse_data("Activity_Set.csv");
+	// Parse Description Set
+    set_identifier = "description_set";
+	parse_data("description_set.csv");
     
+    // Parse Title Set
+    set_identifier = "title_set";
+    parse_data("title_set.csv");
+    
+    // Parse Activity Set
+    set_identifier = "activity_set";
+    parse_data("activity_set.csv");
     
 }

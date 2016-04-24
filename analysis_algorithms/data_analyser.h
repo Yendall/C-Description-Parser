@@ -10,6 +10,7 @@
 
 // Functions
 bool tokenise_data();
+void output_data();
 void begin_analysis();
 void parse_data(std::string);
 CSV_FIELDS parse_csv_file(std::string);
