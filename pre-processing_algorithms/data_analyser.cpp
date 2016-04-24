@@ -14,6 +14,7 @@ std::vector <STR> combined_set;
 // Determiner Set
 std::vector <STR> determiner_set;
 
+
 // Output the data into new condensed files
 // @return: void
 void output_data()
@@ -53,7 +54,6 @@ bool string_exists(std::string string)
             return true;
         }
     }
-    
     return false;
 }
 
