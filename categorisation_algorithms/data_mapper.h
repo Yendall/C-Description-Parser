@@ -4,9 +4,10 @@
 #include <algorithm>
 #include <string>
 #include <vector>
+#include <cmath>
 #include "../include/csv_parser.hpp"
 
-void compare_sets();
+float fetch_cosine();
 void begin_categorisation();
 CSV_FIELDS parse_csv_file(std::string);
 
