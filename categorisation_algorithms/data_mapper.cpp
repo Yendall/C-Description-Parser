@@ -14,7 +14,7 @@ float fetch_cosine()
 {
     // Define two data sets (these are just examples)
     std::vector<std::string> first= {"Torquay","beach","wonderful","beautiful"};
-    std::vector<std::string> second = {"wine","food","winery","fun","wonderful"};
+    std::vector<std::string> second = {"beach","beautiful","scenery","adventure"};
     int numerator = 0;
     int denominator = 0;
     
@@ -34,13 +34,13 @@ float fetch_cosine()
     // Compute the denominator - dot product of the sets
     denominator = std::sqrt(first.size()) * std::sqrt(second.size());
     
-    // If the denominator confirms neither set is empty
+    // If the denominator confirms there is a relationship
     if(denominator > 0)
     {
         return float(numerator) / denominator;
     }
     
-    // One of the sets is empty
+    // There is no similarity between the sets
     return 0.0;
 }
 
