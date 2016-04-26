@@ -4,17 +4,37 @@
 // Set Identifier
 std::string set_descriptor;
 // Parent set for holding data
-std::vector<STR> parent_set;
+std::map<int,STR> parent_map;
 // Child map for holding data and frequency
-std::map<STR,int> child_map;
+std::map<int,std::map<int,int> > child_map;
+
+void loop_map()
+{
+    typedef std::map< int, int>     inner_t;
+    typedef std::map< int, inner_t >        outer_t;
+    typedef outer_t::iterator               outer_iter_t;
+    typedef inner_t::iterator               inner_iter_t;
+    
+    int pointer = 0;
+    for(outer_iter_t o = child_map.begin(); o != child_map.end(); ++o )
+    {
+        for(inner_iter_t i = o->second.begin(); i != o->second.end(); ++i)
+        {
+            std::cout << o->first << " == " << i->second << std::endl;
+        }
+        
+    }   
+}
 
 // Fetch the cosine similarity between two data sets
 // @return: Cosine similarity value of the two sets
 float fetch_cosine()
 {
     // Define two data sets (these are just examples)
-    std::vector<std::string> first= {"Torquay","beach","wonderful","beautiful"};
-    std::vector<std::string> second = {"beach","beautiful","scenery","adventure"};
+    std::vector<std::string> first= 
+    {"globally","recognised","hotspot","unique","streetart","melbourne","offers","many","hidden","gems","interest","appreciators","artistic","subculture","guide","through","many","melbourne’s","laneways","such","stevenson","lane","acdc","lane","union","lane","‘mecca","melbourne’s","street","art’","hosier","lane","areas","discover","chat","extensively","stencil","art","sticker","art","poster","art","commissioned","artworks","former","trends","movement","notable","street","artists"};
+    
+    std::vector<std::string> second = {"melbourne's", "historical","architecture", "walk","art","melbourne","lane","art"};
     int numerator = 0;
     int denominator = 0;
     
@@ -52,8 +72,11 @@ void parse_set(std::string file)
     STR         line;
 	bool 		status;
 	int			index_ptr;
+    int         index_dup;
 	CSV_Parser 	csv_parser;
     CSV_FIELDS 	data_set;
+    
+    CONST_MAP_ITR_INT it;
     
 	index_ptr = 0;
 	
@@ -71,12 +94,29 @@ void parse_set(std::string file)
             }
         }
     }
-	
+    
 	// Create data_map
 	for(const auto& data : data_set)
 	{
-		parent_set.push_back(data);
+		parent_map[index_ptr] = data;
+        
+        index_ptr += 1;
 	}
+    
+    // Populate child map with parent_map indices 
+    index_ptr = 0;
+    it = parent_map.begin();
+    
+    for(; it != parent_map.end(); ++it)
+    {
+        for(int i=0; i < data_set.size(); i++)
+        {
+            child_map[index_ptr][i] = 0.0;
+            
+        }
+        
+        index_ptr += 1;
+    }
 }
 
 // Main function
@@ -84,11 +124,13 @@ void parse_set(std::string file)
 void begin_categorisation()
 {
     float cosine_similarity;
+    
     // Parse Description Set
     set_descriptor = "description_set";
-	parse_set("combined_description_set.csv");
+	parse_set("condensed_description_set.csv");
     
     cosine_similarity = fetch_cosine();
     
-    std::cout << "Cosine Similarity: " << cosine_similarity << std::endl;
+    std::cout << "Cosine: " << cosine_similarity << std::endl;
+    // loop_map();
 }

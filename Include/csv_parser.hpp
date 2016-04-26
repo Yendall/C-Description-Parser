@@ -1,12 +1,6 @@
 /*
     A Simple CSV Parser
     Inspired by - The Practice of Programming by Rob Pike and Brian Kernighan
-
-    TODO
-    Does not handle the embedded line breaks case. Provide support for that
-    For instance the following is not yet supported
-    1997,Ford,E350,"Go get one now
-    they are going fast"
 */
 
 #ifndef __CSV_PARSER_HPP
@@ -33,6 +27,7 @@ typedef std :: vector < STR > :: const_iterator CONST_VECTOR_ITR;
 typedef std :: map < STR, STR > :: iterator MAP_ITR;
 typedef std :: map < STR, CSV_FIELDS > :: iterator MAP_ITR_VEC;
 typedef std :: map <int,std::map<STR,int> > :: iterator MAP_ITR_MAP;
+typedef std :: map < STR, int > :: iterator MAP_ITR_STRINT;
 typedef std :: map < STR, STR > :: const_iterator CONST_MAP_ITR;
 typedef std :: map < int, STR > :: const_iterator CONST_MAP_ITR_INT;
 typedef std :: map < STR, int > :: const_iterator CONST_MAP_ITR_STRINT;
