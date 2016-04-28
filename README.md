@@ -3,7 +3,9 @@ Acknowledgements:
 ------
 Headers:
 C++ CSV Parser Header               : Rakesh G. Karanth
+
 C++ Wordnet Header                  : Princeton University
+
 C++ Data Categorisation Header      : Max Yendall & Georgia Clark
 
 
