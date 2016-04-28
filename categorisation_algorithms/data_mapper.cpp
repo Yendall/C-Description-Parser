@@ -10,7 +10,7 @@ std::map<int,std::map<int,int> > child_map;
 
 void loop_map()
 {
-    typedef std::map< int, int>     inner_t;
+    typedef std::map< int, int>             inner_t;
     typedef std::map< int, inner_t >        outer_t;
     typedef outer_t::iterator               outer_iter_t;
     typedef inner_t::iterator               inner_iter_t;
@@ -31,10 +31,9 @@ void loop_map()
 float fetch_cosine()
 {
     // Define two data sets (these are just examples)
-    std::vector<std::string> first= 
-    {"globally","recognised","hotspot","unique","streetart","melbourne","offers","many","hidden","gems","interest","appreciators","artistic","subculture","guide","through","many","melbourne’s","laneways","such","stevenson","lane","acdc","lane","union","lane","‘mecca","melbourne’s","street","art’","hosier","lane","areas","discover","chat","extensively","stencil","art","sticker","art","poster","art","commissioned","artworks","former","trends","movement","notable","street","artists"};
+    std::vector<std::string> first  =   {""};
     
-    std::vector<std::string> second = {"melbourne's", "historical","architecture", "walk","art","melbourne","lane","art"};
+    std::vector<std::string> second =   {""};
     int numerator = 0;
     int denominator = 0;
     
@@ -132,5 +131,7 @@ void begin_categorisation()
     cosine_similarity = fetch_cosine();
     
     std::cout << "Cosine: " << cosine_similarity << std::endl;
+
     // loop_map();
+    
 }

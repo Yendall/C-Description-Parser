@@ -7,6 +7,7 @@
 #include <cmath>
 #include "../include/csv_parser.hpp"
 
+
 float fetch_cosine();
 void begin_categorisation();
 CSV_FIELDS parse_csv_file(std::string);
