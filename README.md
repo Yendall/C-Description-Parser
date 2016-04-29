@@ -1,7 +1,6 @@
 
 Acknowledgements:
 ------
-Headers:
 C++ CSV Parser Header               : Rakesh G. Karanth
 
 C++ Wordnet Header                  : Princeton University
