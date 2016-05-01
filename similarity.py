@@ -18,16 +18,6 @@ scipy.sparse.csr.csr_matrix
 dtm = dtm.toarray()  # convert to a regular array
 vocab = np.array(vocab)
 
-# use the standard Python list method index(...)
-# list(vocab) or vocab.tolist() will take vocab (an array) and return a list
-house_idx = list(vocab).index('house')
-
-print dtm[0, house_idx]
-
-# using NumPy indexing will be more natural for many
-# in R this would be essentially the same
-print dtm[0, vocab == 'house']
-
 # "by hand"
 n, _ = dtm.shape
 
@@ -101,13 +91,13 @@ for x, y, name in zip(xs, ys, names):
 plt.show()
 
 # Create a denodrogram
-# from scipy.cluster.hierarchy import ward, dendrogram
+from scipy.cluster.hierarchy import ward, dendrogram
 
-# linkage_matrix = ward(dist)
+linkage_matrix = ward(dist)
 
 # match dendrogram to that returned by R's hclust()
-# dendrogram(linkage_matrix, orientation="right", labels=names)
+dendrogram(linkage_matrix, orientation="right", labels=names)
 
-# plt.tight_layout()  # fixes margins
+plt.tight_layout()  # fixes margins
 
-# plt.show()
+plt.show()
