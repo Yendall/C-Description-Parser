@@ -19,24 +19,31 @@ std::vector <STR> determiner_set;
 // @return: void
 void output_data()
 {
+    int counter = 0;
     // Constant map <int, string> interator
     CONST_MAP_ITR_INT it_con = condensed_map.begin();
     
     // Create the output file based on the set_identifier
-    std::ofstream condensed_outputCSV("data/condensed_" + set_identifier + ".csv");
+    
     std::ofstream combined_outputCSV("data/combined_" + set_identifier + ".csv");
     
     for (; it_con != condensed_map.end(); ++it_con)
     {
+        
+        std::ofstream condensed_outputCSV("data/idv_data/" + set_identifier + "/" + std::to_string(counter) + ".txt");
         condensed_outputCSV << "\"" << it_con->second << "\"" << "," << "\n";
+        counter += 1;
+        condensed_outputCSV.close();
     }
     
     for(const auto& word : combined_set)
     {
-        combined_outputCSV << "\"" << word << "\"" << "," << "\n";
+        // combined_outputCSV << "\"" << word << "\"" << "," << "\n";
+        
+        combined_outputCSV << word << " "; 
     }
     
-    condensed_outputCSV.close();
+    
     combined_outputCSV.close();
     
     condensed_map.clear();
