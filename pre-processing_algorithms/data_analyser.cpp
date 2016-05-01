@@ -28,12 +28,12 @@ void output_data()
     
     for (; it_con != condensed_map.end(); ++it_con)
     {
-        condensed_outputCSV << "\"" << it_con->second << "\"" << ",";
+        condensed_outputCSV << "\"" << it_con->second << "\"" << "," << "\n";
     }
     
     for(const auto& word : combined_set)
     {
-        combined_outputCSV << "\"" << word << "\"" << ",";
+        combined_outputCSV << "\"" << word << "\"" << "," << "\n";
     }
     
     condensed_outputCSV.close();

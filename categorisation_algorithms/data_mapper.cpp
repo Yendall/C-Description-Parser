@@ -31,9 +31,9 @@ void loop_map()
 float fetch_cosine()
 {
     // Define two data sets (these are just examples)
-    std::vector<std::string> first  =   {""};
+    std::vector<std::string> first  =   {"globally","recognised","hotspot","unique","streetart", "melbourne" };
     
-    std::vector<std::string> second =   {""};
+    std::vector<std::string> second =   {"through","experience", "uncover", "city", "much", "hidden", "plain", "sight", "pleasure", "show", "others", "place", "call", "home","melbourne"};
     int numerator = 0;
     int denominator = 0;
     
