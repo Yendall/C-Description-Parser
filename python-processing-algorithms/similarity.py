@@ -7,9 +7,10 @@ import matplotlib.pyplot as plt
 from sklearn.manifold import MDS
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from scipy.cluster.hierarchy import ward, dendrogram
 
 # Filenames for training a corpus
-filenames = glob.glob('../data/idv_data/description_set/*.txt')
+filenames = glob.glob('../data/idv_data/data_set/*.txt')
 
 # Transform the data files into a vocabulary vector
 vectorizer = CountVectorizer(input='filename')
@@ -77,12 +78,10 @@ names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
 for x, y, name in zip(xs, ys, names):
     color = 'orange'
     plt.scatter(x, y, c=color)
-    # plt.text(x,y,name)
+    plt.text(x,y,name)
 plt.show()
 
 # Create a denodrogram
-from scipy.cluster.hierarchy import ward, dendrogram
-
 linkage_matrix = ward(dist)
 
 # match dendrogram to that returned by R's hclust()
