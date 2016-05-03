@@ -8,9 +8,8 @@ from sklearn.manifold import MDS
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-
 # Filenames for training a corpus
-filenames = glob.glob('../data/idv_data/activity_set/*.txt')
+filenames = glob.glob('../data/idv_data/description_set/*.txt')
 
 # Transform the data files into a vocabulary vector
 vectorizer = CountVectorizer(input='filename')
@@ -50,6 +49,7 @@ similarities = np.dot(dtm_normed, dtm_normed.T)
 
 np.round(similarities, 2)
 
+print similarities[1,70]
 # two components as we're plotting points in a two-dimensional plane
 # "precomputed" because we provide a distance matrix
 # we will also specify `random_state` so the plot is reproducible.
@@ -77,18 +77,17 @@ names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
 for x, y, name in zip(xs, ys, names):
     color = 'orange'
     plt.scatter(x, y, c=color)
-    # plt.text(x, y, name)
-
+    plt.text(x,y,name)
 plt.show()
 
 # Create a denodrogram
-# from scipy.cluster.hierarchy import ward, dendrogram
+from scipy.cluster.hierarchy import ward, dendrogram
 
-# linkage_matrix = ward(dist)
+linkage_matrix = ward(dist)
 
 # match dendrogram to that returned by R's hclust()
-# dendrogram(linkage_matrix, orientation="right")
+dendrogram(linkage_matrix, orientation="right")
 
-# plt.tight_layout()  # fixes margins
+plt.tight_layout()  # fixes margins
 
-# plt.show()
+plt.show()

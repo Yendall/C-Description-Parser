@@ -25,21 +25,19 @@ void output_data()
     
     // Create the output file based on the set_identifier
     
-    std::ofstream combined_outputCSV("data/combined_" + set_identifier + ".csv");
+    std::ofstream combined_outputCSV("data/combined_data/combined_" + set_identifier + ".csv");
     
     for (; it_con != condensed_map.end(); ++it_con)
     {
         
         std::ofstream condensed_outputCSV("data/idv_data/" + set_identifier + "/" + std::to_string(counter) + ".txt");
-        condensed_outputCSV << "\"" << it_con->second << "\"" << "\n";
+        condensed_outputCSV << it_con->second;
         counter += 1;
         condensed_outputCSV.close();
     }
     
     for(const auto& word : combined_set)
     {
-        // combined_outputCSV << "\"" << word << "\"" << "," << "\n";
-        
         combined_outputCSV << word << " "; 
     }
     
@@ -226,19 +224,19 @@ void parse_data(std::string file)
 void begin_analysis()
 {
 	// Begin parsing the determiner set
-	determiner_set = parse_csv_file("data/determiner_set.csv");
+	determiner_set = parse_csv_file("sets/stop_words.csv");
     
 	// Parse Description Set
     set_identifier = "description_set";
-	parse_data("description_set.csv");
+	parse_data("sets/description_set.csv");
     
     // Parse Title Set
     set_identifier = "title_set";
-    parse_data("title_set.csv");
+    parse_data("sets/title_set.csv");
     
     // Parse Activity Set
     set_identifier = "activity_set";
-    parse_data("activity_set.csv"); 
+    parse_data("sets/activity_set.csv"); 
     
     
 }
