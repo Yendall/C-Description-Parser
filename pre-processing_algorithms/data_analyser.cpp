@@ -30,7 +30,7 @@ void output_data()
     for (; it_con != condensed_map.end(); ++it_con)
     {
         
-        std::ofstream condensed_outputCSV("data/idv_data/" + set_identifier + "/" + std::to_string(counter) + ".txt");
+        std::ofstream condensed_outputCSV("data/idv_data/data_set/" + std::to_string(counter) + ".txt");
         condensed_outputCSV << it_con->second;
         counter += 1;
         condensed_outputCSV.close();
@@ -229,15 +229,7 @@ void begin_analysis()
     
 	// Parse Description Set
     set_identifier = "description_set";
-	parse_data("../data/sets/description_set.csv");
-    
-    // Parse Title Set
-    set_identifier = "title_set";
-    parse_data("../data/sets/title_set.csv");
-    
-    // Parse Activity Set
-    set_identifier = "activity_set";
-    parse_data("../data/sets/activity_set.csv"); 
+	parse_data("../data/combined_data/combined_fields.csv");
     
     
 }
