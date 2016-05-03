@@ -167,6 +167,7 @@ CSV_FIELDS parse_csv_file(std::string path)
             status = csv_parser.parse_line(line, csv_temp);
             if(status)
             {
+                std::cout << line << std::endl;
 				csv_return = csv_temp;
                 csv_temp.clear();
             }
@@ -224,19 +225,19 @@ void parse_data(std::string file)
 void begin_analysis()
 {
 	// Begin parsing the determiner set
-	determiner_set = parse_csv_file("sets/stop_words.csv");
+	determiner_set = parse_csv_file("data/sets/stop_words.csv");
     
 	// Parse Description Set
     set_identifier = "description_set";
-	parse_data("sets/description_set.csv");
+	parse_data("../data/sets/description_set.csv");
     
     // Parse Title Set
     set_identifier = "title_set";
-    parse_data("sets/title_set.csv");
+    parse_data("../data/sets/title_set.csv");
     
     // Parse Activity Set
     set_identifier = "activity_set";
-    parse_data("sets/activity_set.csv"); 
+    parse_data("../data/sets/activity_set.csv"); 
     
     
 }

@@ -77,7 +77,7 @@ names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
 for x, y, name in zip(xs, ys, names):
     color = 'orange'
     plt.scatter(x, y, c=color)
-    plt.text(x,y,name)
+    # plt.text(x,y,name)
 plt.show()
 
 # Create a denodrogram
