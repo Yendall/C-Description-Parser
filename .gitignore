@@ -3,6 +3,4 @@
 
 data_parser
 
-*.txt
-
 cosine.py
