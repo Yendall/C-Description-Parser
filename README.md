@@ -3,9 +3,9 @@ Acknowledgements:
 ------
 C++ CSV Parser Header               : Rakesh G. Karanth
 
-Python Cosine Similarity &            : Max Yendall & Georgia Clark
-
 C++ Data Pre-Processor Header       : Max Yendall & Georgia Clark
+
+Python Cosine Similarity & Cluster Algorithm           : Max Yendall & Georgia Clark
 
 
 TODO:
