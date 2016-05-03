@@ -1,19 +1,25 @@
-import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer
+import os
 import scipy
 import glob
+import numpy as np
+import matplotlib.pyplot as plt
+
+from sklearn.manifold import MDS
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
 
 # Filenames for training a corpus
-filenames = glob.glob('data/idv_data/title_set/*.txt')
-
+filenames = glob.glob('../data/idv_data/activity_set/*.txt')
 
 # Transform the data files into a vocabulary vector
 vectorizer = CountVectorizer(input='filename')
 dtm = vectorizer.fit_transform(filenames)
 vocab = vectorizer.get_feature_names()
-print 
+
 # for reference, note the current class of `dtm`
 type(dtm)
+# Create a sparse matrix
 scipy.sparse.csr.csr_matrix
 dtm = dtm.toarray()  # convert to a regular array
 vocab = np.array(vocab)
@@ -28,32 +34,21 @@ for i in range(n):
         x, y = dtm[i, :], dtm[j, :]
         dist[i, j] = np.sqrt(np.sum((x - y)**2))
         
+# Use the Cosine similarity to compute the distance between points
 
-from sklearn.metrics.pairwise import euclidean_distances
-
-dist = euclidean_distances(dtm)
-
-np.round(dist, 1)
-
-from sklearn.metrics.pairwise import cosine_similarity
-
+# Normalize the cosine similarity
 dist = 1 - cosine_similarity(dtm)
 
 np.round(dist, 2)
 
-norms = np.sqrt(np.sum(dtm * dtm, axis=1, keepdims=True))  # multiplication between arrays is element-wise
+# Normalise the cosine similartity using the dot product of each vector
+norms = np.sqrt(np.sum(dtm * dtm, axis=1, keepdims=True))
 
 dtm_normed = dtm / norms
 
 similarities = np.dot(dtm_normed, dtm_normed.T)
 
 np.round(similarities, 2)
-
-import os  # for os.path.basename
-
-import matplotlib.pyplot as plt
-
-from sklearn.manifold import MDS
 
 # two components as we're plotting points in a two-dimensional plane
 # "precomputed" because we provide a distance matrix
@@ -66,10 +61,6 @@ xs, ys = pos[:, 0], pos[:, 1]
 
 # short versions of filenames:
 names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
-
-import os  # for os.path.basename
-import matplotlib.pyplot as plt
-from sklearn.manifold import MDS
 
 # two components as we're plotting points in a two-dimensional plane
 # "precomputed" because we provide a distance matrix
@@ -84,20 +75,20 @@ names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
 
 # color-blind-friendly palette
 for x, y, name in zip(xs, ys, names):
-    color = 'orange' if "Austen" in name else 'skyblue'
+    color = 'orange'
     plt.scatter(x, y, c=color)
-    plt.text(x, y, name)
+    # plt.text(x, y, name)
 
 plt.show()
 
 # Create a denodrogram
-from scipy.cluster.hierarchy import ward, dendrogram
+# from scipy.cluster.hierarchy import ward, dendrogram
 
-linkage_matrix = ward(dist)
+# linkage_matrix = ward(dist)
 
 # match dendrogram to that returned by R's hclust()
-dendrogram(linkage_matrix, orientation="right", labels=names)
+# dendrogram(linkage_matrix, orientation="right")
 
-plt.tight_layout()  # fixes margins
+# plt.tight_layout()  # fixes margins
 
-plt.show()
+# plt.show()

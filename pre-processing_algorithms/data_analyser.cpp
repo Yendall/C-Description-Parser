@@ -31,7 +31,7 @@ void output_data()
     {
         
         std::ofstream condensed_outputCSV("data/idv_data/" + set_identifier + "/" + std::to_string(counter) + ".txt");
-        condensed_outputCSV << "\"" << it_con->second << "\"" << "," << "\n";
+        condensed_outputCSV << "\"" << it_con->second << "\"" << "\n";
         counter += 1;
         condensed_outputCSV.close();
     }

@@ -30,7 +30,7 @@ def parse_data():
     data_map = {}
     
     # Parse the CSV file (this will be denoted by a string variable)
-    with open('data/condensed_description_set.csv','rb') as csvfile:
+    with open('../data/condensed_description_set.csv','rb') as csvfile:
         reader = csv.reader(csvfile,delimiter=',')
         for row in reader:
             data_list[counter] = ''.join(row)
