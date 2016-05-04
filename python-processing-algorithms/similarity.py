@@ -157,9 +157,9 @@ def calculate_and_cluster():
     # short versions of filenames:
     names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
 
-    # two components as we're plotting points in a two-dimensional plane
-    # "precomputed" because we provide a distance matrix
-    # we will also specify `random_state` so the plot is reproducible.
+    # N Components: plotting points in a two-dimensional plane
+    # Dissimilirity: "precomputed" because of the Distance Matrix
+    # Random state is fixed so we can reproduce the plot.
     mds = MDS(n_components=2, dissimilarity="precomputed", random_state=1)
 
     pos = mds.fit_transform(dist)  # shape (n_components, n_samples)
@@ -168,23 +168,21 @@ def calculate_and_cluster():
     # short versions of filenames:
     names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
     
-    
     # Loop through the points, label approriately and scatter
     for x, y, name in zip(xs, ys, names):
         color = 'orange'
-        plt.scatter(x, y, c=get_colour(name.split('_',1)[1]))
-        # plt.text(x,y,name.split('_', 1)[1])
+        plt.scatter(x, y, s=100,c=get_colour(name.split('_',1)[1]))
+        # plt.text(x,y,name.split('_', 1)[0])
     plt.show()
 
     # Create a denodrogram
-    # linkage_matrix = ward(dist)
+    #linkage_matrix = ward(dist)
 
     # match dendrogram to that returned by R's hclust()
-    # dendrogram(linkage_matrix, orientation="right")
+    #dendrogram(linkage_matrix, orientation="right")
 
-    # plt.tight_layout()  # fixes margins
-
-    # plt.show()
+    #plt.tight_layout()
+    #plt.show()
 
 # Start the main function when the program begins
 if __name__ == "__main__":
