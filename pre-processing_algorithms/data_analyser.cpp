@@ -13,6 +13,10 @@ std::map <int,STR> condensed_map;
 std::vector <STR> combined_set;
 // Determiner Set
 std::vector <STR> determiner_set;
+// Tag list
+std::vector <STR> tag_list;
+// Tag set
+std::map <STR,STR> tag_set;
 
 
 // Output the data into new condensed files
@@ -226,10 +230,14 @@ void begin_analysis()
 {
 	// Begin parsing the determiner set
 	determiner_set = parse_csv_file("data/sets/stop_words.csv");
+    tag_list = parse_csv_file("data/sets/tag_set.csv");
+        
+    for(const auto& tag : tag_list)
+    {
+        std::cout << tag << std::endl;
+    }
     
 	// Parse Description Set
     set_identifier = "description_set";
-	parse_data("../data/combined_data/combined_fields.csv");
-    
-    
+	parse_data("../data/condensed_data/complete_data.csv");
 }
