@@ -9,9 +9,12 @@ from sklearn.manifold import MDS
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.cluster.hierarchy import ward, dendrogram
-
+from matplotlib.font_manager import FontProperties
+from collections import OrderedDict
+from pylab import rcParams
 
 # Rename a file if it exists. Replace it with the new filename passed in
+# @params: old_filename: String, new_filename : String
 # @return: void
 def rename_file(old_filename,new_filename):
     path = '../data/idv_data/data_set/'
@@ -20,31 +23,33 @@ def rename_file(old_filename,new_filename):
         new_file = path + new_filename
         os.rename(old_file,new_file)
     
-# Obtain colour from given id
+# Obtain colour from the given ID
+# @params: id : String
 # @return: Colour as a string
 def get_colour(id):
     switcher = {
-        'Food_&_Wine' : '#458b74' , # Dark Aqua
-        'Education' : '#8a2be2', # Blue Violet
-        'History_&_Culture' : '#98f5ff', #Light Blue
-        'Architecture' : '#ee3b3b', # Red
-        'For_Couples' : '#66cd00', # Green
-        'Photography': '#ffb90f', # Yellow
-        'Livability_Research' : '#caff70', # Light Green
-        'Kids_Friendly' : '#ff8c00', # Orange
-        'Outdoor_&_Nature' : '#ff1493', # Pink
-        'Shopping' : '#8b0a50', # Deep Pink
-        'Sports_&_Leisure' : '#104e8b', # Dark Blue
-        'Host_With_Car' : '#cd8c95', # Light Pink 
-        'Extreme_Fun' : '#ee9572', # Salmon
-        'Events' : '#cd919e', # Soft Pink
-        'Health_&_Beauty' : '#6c7b8b', # Slate Gray
-        'Private_Group' : '#008b45' # Spring Green
+        'Food_&_Wine'           :   '#458b74',  # Dark Aqua
+        'Education'             :   '#8a2be2',  # Blue Violet
+        'History_&_Culture'     :   '#98f5ff',  # Light Blue
+        'Architecture'          :   '#ee3b3b',  # Red
+        'For_Couples'           :   '#66cd00',  # Green
+        'Photography'           :   '#ffb90f',  # Yellow
+        'Livability_Research'   :   '#caff70',  # Light Green
+        'Kids_Friendly'         :   '#ff8c00',  # Orange
+        'Outdoor_&_Nature'      :   '#ff1493',  # Pink
+        'Shopping'              :   '#8b0a50',  # Deep Pink
+        'Sports_&_Leisure'      :   '#104e8b',  # Dark Blue
+        'Host_With_Car'         :   '#cd8c95',  # Light Pink 
+        'Extreme_Fun'           :   '#ee9572',  # Salmon
+        'Events'                :   '#cd919e',  # Soft Pink
+        'Health_&_Beauty'       :   '#6c7b8b',  # Slate Gray
+        'Private_Group'         :   '#008b45'   # Spring Green
     }
     
-    return switcher.get(id, '#858585') # Light Gray
+    return switcher.get(id, '#d3d3d3') # Light Gray
      
 # Obtain tag from given id
+# @params: id : String
 # @return: Tag as a string
 def get_tag(id):
     switcher = {
@@ -154,7 +159,7 @@ def calculate_and_cluster():
 
     xs, ys = pos[:, 0], pos[:, 1]
 
-    # short versions of filenames:
+    # Short versions of filenames:
     names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
 
     # N Components: plotting points in a two-dimensional plane
@@ -168,11 +173,20 @@ def calculate_and_cluster():
     # short versions of filenames:
     names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
     
+    # Set figure size to have dimensions of at least 15 inches for the width.
+    # Height can be scaled accordingly.
+    plt.figure(figsize=(15,8))
+    plt.subplot(211)
     # Loop through the points, label approriately and scatter
+    # Ensure figure size has enough room for legend plotting. Each plot must have a label.
+    # In this case, label is the split value denoting the POI tag
     for x, y, name in zip(xs, ys, names):
-        color = 'orange'
-        plt.scatter(x, y, s=100,c=get_colour(name.split('_',1)[1]))
-        # plt.text(x,y,name.split('_', 1)[0])
+        plt.scatter(x, y, s=100,c=get_colour(name.split('_',1)[1]), label = name.split('_',1)[1])
+    
+    handles, labels = plt.gca().get_legend_handles_labels()
+    by_label = OrderedDict(zip(labels, handles))
+    legend = plt.legend(by_label.values(), by_label.keys(),loc='lower center',ncol=4,bbox_to_anchor=(0.5, -0.6))
+    
     plt.show()
 
     # Create a denodrogram
