@@ -43,7 +43,7 @@ def get_colour(id):
         'Extreme_Fun'           :   '#ee9572',  # Salmon
         'Events'                :   '#cd919e',  # Soft Pink
         'Health_&_Beauty'       :   '#6c7b8b',  # Slate Gray
-        'Private_Group'         :   '#008b45'   # Spring Green
+        'Private_Group'         :   '#b3d9ff'   # Medium Blue
     }
     
     return switcher.get(id, '#d3d3d3') # Light Gray
@@ -87,7 +87,7 @@ def calculate_and_cluster():
     ptr = ""
 
     # Parse the CSV file (this will be denoted by a string variable)
-    with open('../data/condensed_data/complete_data.csv','rb') as csvfile:
+    with open('../data/condensed_data/Untagged_Data.csv','rb') as csvfile:
         reader = csv.reader(csvfile,delimiter=',')
         for row in reader:
             data_list[counter] = ''.join(row)
