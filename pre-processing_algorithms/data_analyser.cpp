@@ -33,7 +33,10 @@ void output_data()
     
     for (; it_con != condensed_map.end(); ++it_con)
     {
-        
+        if(counter == 230)
+        {
+            std::cout << it_con->second << std::endl;
+        }
         std::ofstream condensed_outputCSV("data/idv_data/data_set/" + std::to_string(counter) + ".txt");
         condensed_outputCSV << it_con->second;
         counter += 1;
@@ -231,13 +234,8 @@ void begin_analysis()
 	// Begin parsing the determiner set
 	determiner_set = parse_csv_file("data/sets/stop_words.csv");
     tag_list = parse_csv_file("data/sets/tag_set.csv");
-        
-    for(const auto& tag : tag_list)
-    {
-        std::cout << tag << std::endl;
-    }
     
 	// Parse Description Set
     set_identifier = "description_set";
-	parse_data("../data/condensed_data/complete_data.csv");
+	parse_data("../data/condensed_data/Untagged_data.csv");
 }
