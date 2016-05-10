@@ -87,7 +87,7 @@ def calculate_and_cluster():
     ptr = ""
 
     # Parse the CSV file (this will be denoted by a string variable)
-    with open('../data/condensed_data/Untagged_Data.csv','rb') as csvfile:
+    with open('../data/sets/complete_data.csv','rb') as csvfile:
         reader = csv.reader(csvfile,delimiter=',')
         for row in reader:
             data_list[counter] = ''.join(row)
@@ -135,32 +135,31 @@ def calculate_and_cluster():
             dist[i, j] = np.sqrt(np.sum((x - y)**2))
         
     # Use the Cosine similarity to compute the distance between points
-
     # Calculate cosine similarity
     dist = 1 - cosine_similarity(dtm)
-
     np.round(dist, 2)
-
+    
     # Normalise the cosine similartity using the dot product of each vector
     norms = np.sqrt(np.sum(dtm * dtm, axis=1, keepdims=True))
-
     dtm_normed = dtm / norms
-
     similarities = np.dot(dtm_normed, dtm_normed.T)
-
-    np.round(similarities, 2)
-
-    # two components as we're plotting points in a two-dimensional plane
-    # "precomputed" because we provide a distance matrix
-    # we will also specify `random_state` so the plot is reproducible.
-    mds = MDS(n_components=2, dissimilarity="precomputed", random_state=1)
-
-    pos = mds.fit_transform(dist)  # shape (n_components, n_samples)
-
-    xs, ys = pos[:, 0], pos[:, 1]
-
-    # Short versions of filenames:
-    names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
+    sim_array = np.round(similarities, 2)
+    
+    print sim_array
+    # np.savetxt("test_file.txt",sim_array)
+    _row = 0
+    _column = 0
+    somefile = open("test_file.txt","w")
+    for row in sim_array:
+        somefile.write("Row: " + str(_row) + "\n[")
+        for elem in row:
+            _column += 1
+            if(elem > 0.6 and elem < 1.00):
+                somefile.write(str(_column) + ":" + "%.2f" % (elem,) + ",")
+        _column = 0
+        _row += 1
+        somefile.write("]")
+        somefile.write("\n")
 
     # N Components: plotting points in a two-dimensional plane
     # Dissimilirity: "precomputed" because of the Distance Matrix
@@ -177,17 +176,18 @@ def calculate_and_cluster():
     # Height can be scaled accordingly.
     plt.figure(figsize=(15,8))
     plt.subplot(211)
+    
     # Loop through the points, label approriately and scatter
     # Ensure figure size has enough room for legend plotting. Each plot must have a label.
     # In this case, label is the split value denoting the POI tag
-    for x, y, name in zip(xs, ys, names):
-        plt.scatter(x, y, s=100,c=get_colour(name.split('_',1)[1]), label = name.split('_',1)[1])
+#    for x, y, name in zip(xs, ys, names):
+#        plt.scatter(x, y, s=100,c=get_colour(name.split('_',1)[1]), label = name.split('_',1)[1])
+#    
+#    handles, labels = plt.gca().get_legend_handles_labels()
+#    by_label = OrderedDict(zip(labels, handles))
+#    legend = plt.legend(by_label.values(), by_label.keys(),loc='lower center',ncol=4,bbox_to_anchor=(0.5, -0.6))
     
-    handles, labels = plt.gca().get_legend_handles_labels()
-    by_label = OrderedDict(zip(labels, handles))
-    legend = plt.legend(by_label.values(), by_label.keys(),loc='lower center',ncol=4,bbox_to_anchor=(0.5, -0.6))
-    
-    plt.show()
+#    plt.show()
 
     # Create a denodrogram
     #linkage_matrix = ward(dist)

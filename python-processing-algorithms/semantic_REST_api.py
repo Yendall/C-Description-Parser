@@ -20,6 +20,9 @@ def sss(s1, s2, type='relation', corpus='webbase'):
         print 'Error in getting similarity for %s: %s' % ((s1,s2), response)
         return 0.0
     
+def get_chunks(list_ref,n):
+    return [list_ref[x:x+n] for x in range(0,len(list_ref), n)]
+
 # Function which begins the tokenisation of sets and begins returning similarities in a map
 # @return: void
 def parse_data():
@@ -30,7 +33,7 @@ def parse_data():
     data_map = {}
     
     # Parse the CSV file (this will be denoted by a string variable)
-    with open('../data/condensed_data/condensed_description_set.csv','rb') as csvfile:
+    with open('../data/condensed_data/complete_data.csv','rb') as csvfile:
         reader = csv.reader(csvfile,delimiter=',')
         for row in reader:
             data_list[counter] = ''.join(row)
@@ -39,7 +42,7 @@ def parse_data():
     # Populate the data map with key = index, value = list_copy
     for x in range(0,len(data_list)):
         data_map[x] = data_list
-
+    
     # Iterate through the data map and fetch the similarity for each pair
     for key,value in data_map.iteritems():
         print key
