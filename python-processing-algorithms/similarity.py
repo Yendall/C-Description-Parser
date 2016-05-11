@@ -149,12 +149,12 @@ def calculate_and_cluster():
     # np.savetxt("test_file.txt",sim_array)
     _row = 0
     _column = 0
-    somefile = open("test_file.txt","w")
+    somefile = open("distance_matrix_filtered.txt","w")
     for row in sim_array:
         somefile.write("Row: " + str(_row) + "\n[")
         for elem in row:
             _column += 1
-            if(elem > 0.6 and elem < 1.00):
+            if(elem > 0 and elem < 0.20):
                 somefile.write(str(_column) + ":" + "%.2f" % (elem,) + ",")
         _column = 0
         _row += 1
@@ -180,14 +180,14 @@ def calculate_and_cluster():
     # Loop through the points, label approriately and scatter
     # Ensure figure size has enough room for legend plotting. Each plot must have a label.
     # In this case, label is the split value denoting the POI tag
-#    for x, y, name in zip(xs, ys, names):
-#        plt.scatter(x, y, s=100,c=get_colour(name.split('_',1)[1]), label = name.split('_',1)[1])
-#    
-#    handles, labels = plt.gca().get_legend_handles_labels()
-#    by_label = OrderedDict(zip(labels, handles))
-#    legend = plt.legend(by_label.values(), by_label.keys(),loc='lower center',ncol=4,bbox_to_anchor=(0.5, -0.6))
+    for x, y, name in zip(xs, ys, names):
+        plt.scatter(x, y, s=100,c=get_colour(name.split('_',1)[1]), label = name.split('_',1)[1])
+        #plt.text(x,y,name.split('_',1)[0])
+    handles, labels = plt.gca().get_legend_handles_labels()
+    by_label = OrderedDict(zip(labels, handles))
+    legend = plt.legend(by_label.values(), by_label.keys(),loc='lower center',ncol=4,bbox_to_anchor=(0.5, -0.6))
     
-#    plt.show()
+    plt.show()
 
     # Create a denodrogram
     #linkage_matrix = ward(dist)
