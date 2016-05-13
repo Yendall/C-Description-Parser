@@ -220,7 +220,7 @@ def calculate_and_cluster():
     
     for x, y, name in zip(xs, ys, names):
         plt.scatter(x, y, s=100,c=get_colour_tag(name.split('_',1)[1]), label = name.split('_',1)[1])
-        # plt.text(x,y,name.split('_',1)[0])
+        plt.text(x,y,name.split('_',1)[0])
     handles, labels = plt.gca().get_legend_handles_labels()
     by_label = OrderedDict(zip(labels, handles))
     legend = plt.legend(by_label.values(), by_label.keys(),loc='lower center',ncol=4,bbox_to_anchor=(0.5, -0.6))
