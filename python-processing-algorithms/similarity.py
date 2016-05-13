@@ -174,13 +174,14 @@ def calculate_and_cluster():
     dist = 1 - cosine_similarity(dtm)
     np.round(dist, 2)
     
+    
     # Normalise the cosine similartity using the dot product of each vector
     norms = np.sqrt(np.sum(dtm * dtm, axis=1, keepdims=True))
     dtm_normed = dtm / norms
     similarities = np.dot(dtm_normed, dtm_normed.T)
     sim_array = np.round(similarities, 2)
     
-    print sim_array
+    
     # np.savetxt("test_file.txt",sim_array)
     _row = 0
     _column = 0
@@ -189,8 +190,9 @@ def calculate_and_cluster():
         somefile.write("Row: " + str(_row) + "\n[")
         for elem in row:
             _column += 1
-            if(elem > 0.50 and elem < 1.00):
-                somefile.write(str(_column) + ":" + "%.2f" % (elem,) + ",")
+            new_elem = 1 - elem
+            if(new_elem > 0.80 and new_elem < 0.99):
+                somefile.write(str(_column) + ":" + "%.2f" % (new_elem,) + ",")
         _column = 0
         _row += 1
         somefile.write("]")
