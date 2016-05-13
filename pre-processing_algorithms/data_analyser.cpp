@@ -237,5 +237,5 @@ void begin_analysis()
     
 	// Parse Description Set
     set_identifier = "description_set";
-	parse_data("../data/condensed_data/complete_data.csv");
+	parse_data("../data/sets/complete_set.csv");
 }

@@ -26,6 +26,15 @@ def rename_file(old_filename,new_filename):
 # Obtain colour from the given ID
 # @params: id : String
 # @return: Colour as a string
+def get_colour_tag(id):
+    switcher = {
+        'Tagged'    :   '#FFFFB7',  # Yellow
+    }
+    return switcher.get(id, '#d3d3d3') # Light Gray
+
+# Obtain colour from the given ID
+# @params: id : String
+# @return: Colour as a string
 def get_colour(id):
     switcher = {
         'Food_&_Wine'           :   '#458b74',  # Dark Aqua
@@ -73,6 +82,19 @@ def get_tag(id):
     
     return switcher.get(id, 'Untagged')
 
+# Obtain tag set from given id
+# @params: id : String
+# @return: Tags as a list
+def get_tag_set(id):
+    tag_list = []
+    file_name = id + '.csv'
+    with open('../data/data_tags/' + file_name, 'rb') as csvfile:
+        reader = csv.reader(csvfile,delimiter=',')
+        for row in reader:
+            tag_list.append(row)
+    
+    return tag_list
+
 # Calculate the Cosine Similairity, normalize the values into a distance metric in the form of
 # a distance matrix. Then begin Multi-Dimensional Clustering given the distance matrix, with
 # pre-computed parameters which will be used to generate a Scatter Plot and Dendrogram.
@@ -82,33 +104,46 @@ def calculate_and_cluster():
     # Variables for storing the data
     data_list = {}
     tag_list = {}
+    tag_map = {}
+    data_tag_map = {}
     counter = 0
     index = 0
     ptr = ""
 
     # Parse the CSV file (this will be denoted by a string variable)
-    with open('../data/sets/complete_data.csv','rb') as csvfile:
+    with open('../data/sets/complete_set.csv','rb') as csvfile:
         reader = csv.reader(csvfile,delimiter=',')
         for row in reader:
             data_list[counter] = ''.join(row)
             counter +=1
-            
-    counter = 0        
+    
     # Loop through data in range
     for data in range(0,len(data_list)):
         # Split the last token in the string
         split = data_list[data].split(" ")[-1:]
-        # Maintain old file name (partial)
+        # print split[0], "Tag set: ", get_tag_set(split[0])
+        
+        data_tag_map[split[0]] = get_tag_set(split[0])
+        
+    od = OrderedDict(sorted(data_tag_map.items()))
+    
+    counter = 0
+    for key, value in od.iteritems():
+        # Maintain old file name
         file_old = str(counter) + '.txt'
-        # Create a new file name with the tag appended
-        file_new = str(counter) + '_' + get_tag(split[0]) + '.txt'
+        
+        tag = ''
+        if len(value) == 1:
+            tag = 'Tagged'
+        else:
+            tag = 'Untagged'
+            
+        # Create new file name with tagged / untagged appended
+        file_new = str(counter) + '_' + tag + '.txt'
         # Rename the file for later use in color co-ordination
         rename_file(file_old,file_new)
-        # Append the tag list so we can reference the tag later for colour
-        tag_list[str(counter)] = get_tag(split[0])
-        # Iterate the counter
         counter += 1
-            
+    
     # Filenames for training a corpus (appended with tag)
     filenames = glob.glob('../data/idv_data/data_set/*.txt')
     
@@ -154,7 +189,7 @@ def calculate_and_cluster():
         somefile.write("Row: " + str(_row) + "\n[")
         for elem in row:
             _column += 1
-            if(elem > 0 and elem < 0.20):
+            if(elem > 0.50 and elem < 1.00):
                 somefile.write(str(_column) + ":" + "%.2f" % (elem,) + ",")
         _column = 0
         _row += 1
@@ -180,14 +215,16 @@ def calculate_and_cluster():
     # Loop through the points, label approriately and scatter
     # Ensure figure size has enough room for legend plotting. Each plot must have a label.
     # In this case, label is the split value denoting the POI tag
+    
     for x, y, name in zip(xs, ys, names):
-        plt.scatter(x, y, s=100,c=get_colour(name.split('_',1)[1]), label = name.split('_',1)[1])
-        #plt.text(x,y,name.split('_',1)[0])
+        plt.scatter(x, y, s=100,c=get_colour_tag(name.split('_',1)[1]), label = name.split('_',1)[1])
+        plt.text(x,y,name.split('_',1)[0])
     handles, labels = plt.gca().get_legend_handles_labels()
     by_label = OrderedDict(zip(labels, handles))
     legend = plt.legend(by_label.values(), by_label.keys(),loc='lower center',ncol=4,bbox_to_anchor=(0.5, -0.6))
     
     plt.show()
+    
 
     # Create a denodrogram
     #linkage_matrix = ward(dist)
@@ -197,7 +234,7 @@ def calculate_and_cluster():
 
     #plt.tight_layout()
     #plt.show()
-
+    
 # Start the main function when the program begins
 if __name__ == "__main__":
     calculate_and_cluster()
