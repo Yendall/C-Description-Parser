@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 
 from sklearn.manifold import MDS
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.cluster.hierarchy import ward, dendrogram
 from matplotlib.font_manager import FontProperties
@@ -23,6 +24,7 @@ def rename_file(old_filename,new_filename):
         new_file = path + new_filename
         os.rename(old_file,new_file)
     
+
 # Obtain colour from the given ID
 # @params: id : String
 # @return: Colour as a string
@@ -82,6 +84,7 @@ def get_tag(id):
     
     return switcher.get(id, 'Untagged')
 
+
 # Obtain tag set from given id
 # @params: id : String
 # @return: Tags as a list
@@ -116,17 +119,18 @@ def calculate_and_cluster():
         for row in reader:
             data_list[counter] = ''.join(row)
             counter +=1
+    counter = 0
     
     # Loop through data in range
     for data in range(0,len(data_list)):
         # Split the last token in the string
         split = data_list[data].split(" ")[-1:]
         # print split[0], "Tag set: ", get_tag_set(split[0])
-        
         data_tag_map[split[0]] = get_tag_set(split[0])
-        
     od = OrderedDict(sorted(data_tag_map.items()))
     
+    names = []
+    data_tagged_list = {}
     counter = 0
     for key, value in od.iteritems():
         # Maintain old file name
@@ -135,8 +139,12 @@ def calculate_and_cluster():
         tag = ''
         if len(value) == 1:
             tag = 'Tagged'
+            names.append(str(counter) + "_" + tag)
+            data_tagged_list[str(counter)] = True
         else:
             tag = 'Untagged'
+            names.append(str(counter) + "_" + tag)
+            data_tagged_list[str(counter)] = False
             
         # Create new file name with tagged / untagged appended
         file_new = str(counter) + '_' + tag + '.txt'
@@ -144,71 +152,23 @@ def calculate_and_cluster():
         rename_file(file_old,file_new)
         counter += 1
     
-    # Filenames for training a corpus (appended with tag)
-    filenames = glob.glob('../data/idv_data/data_set/*.txt')
     
-    # Transform the data files into a vocabulary vector
-    vectorizer = CountVectorizer(input='filename')
-    dtm = vectorizer.fit_transform(filenames)
-    vocab = vectorizer.get_feature_names()
-
-    # for reference, note the current class of `dtm`
-    type(dtm)
-    # Create a sparse matrix    
-    scipy.sparse.csr.csr_matrix
-    dtm = dtm.toarray()  # convert to a regular array
-    vocab = np.array(vocab)
-
-    # "by hand"
-    n, _ = dtm.shape
-
-    dist = np.zeros((n, n))
-
-    for i in range(n):
-        for j in range(n):
-            x, y = dtm[i, :], dtm[j, :]
-            dist[i, j] = np.sqrt(np.sum((x - y)**2))
-        
-    # Use the Cosine similarity to compute the distance between points
-    # Calculate cosine similarity
-    dist = 1 - cosine_similarity(dtm)
-    np.round(dist, 2)
+    dataNodes = []
+    for x in range(0,len(data_list)):
+        dataNodes.append(data_list[x])
+    vect = TfidfVectorizer(min_df=1)
+    tfidf = vect.fit_transform(dataNodes)
     
-    
-    # Normalise the cosine similartity using the dot product of each vector
-    norms = np.sqrt(np.sum(dtm * dtm, axis=1, keepdims=True))
-    dtm_normed = dtm / norms
-    similarities = np.dot(dtm_normed, dtm_normed.T)
-    sim_array = np.round(similarities, 2)
-    
-    
-    # np.savetxt("test_file.txt",sim_array)
-    _row = 0
-    _column = 0
-    somefile = open("distance_matrix_filtered.txt","w")
-    for row in sim_array:
-        somefile.write("Row: " + str(_row) + "\n[")
-        for elem in row:
-            _column += 1
-            new_elem = 1 - elem
-            if(new_elem > 0.80 and new_elem < 0.99):
-                somefile.write(str(_column) + ":" + "%.2f" % (new_elem,) + ",")
-        _column = 0
-        _row += 1
-        somefile.write("]")
-        somefile.write("\n")
-
+    for sim in (tfidf * tfidf.T).A:
+        print sim
     # N Components: plotting points in a two-dimensional plane
     # Dissimilirity: "precomputed" because of the Distance Matrix
     # Random state is fixed so we can reproduce the plot.
     mds = MDS(n_components=2, dissimilarity="precomputed", random_state=1)
 
-    pos = mds.fit_transform(dist)  # shape (n_components, n_samples)
+    pos = mds.fit_transform((tfidf * tfidf.T).A)  # shape (n_components, n_samples)
     xs, ys = pos[:, 0], pos[:, 1]
 
-    # short versions of filenames:
-    names = [os.path.basename(fn).replace('.txt', '') for fn in filenames]
-    
     # Set figure size to have dimensions of at least 15 inches for the width.
     # Height can be scaled accordingly.
     plt.figure(figsize=(15,8))

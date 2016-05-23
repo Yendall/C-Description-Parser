@@ -29,24 +29,22 @@ void output_data()
     
     // Create the output file based on the set_identifier
     
-    std::ofstream combined_outputCSV("data/combined_data/combined_" + set_identifier + ".csv");
+    std::ofstream combined_outputCSV("data/combined_data/combined_set.csv");
     
     for (; it_con != condensed_map.end(); ++it_con)
     {
-        if(counter == 230)
-        {
-            std::cout << it_con->second << std::endl;
-        }
         std::ofstream condensed_outputCSV("data/idv_data/data_set/" + std::to_string(counter) + ".txt");
+        combined_outputCSV << it_con->second;
+        combined_outputCSV << "\n";
         condensed_outputCSV << it_con->second;
         counter += 1;
         condensed_outputCSV.close();
     }
     
-    for(const auto& word : combined_set)
+    /*for(const auto& word : combined_set)
     {
         combined_outputCSV << word << " "; 
-    }
+    }*/
     
     
     combined_outputCSV.close();
