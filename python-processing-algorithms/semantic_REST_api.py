@@ -54,7 +54,6 @@ def testAPI(index):
 if __name__ == "__main__":
     # Define stdout
     orig_stdout = sys.stdout
-
     parse_data()
     List = DataList
     partial_harvester = partial(harvester, case=List)
