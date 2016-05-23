@@ -5,7 +5,7 @@ C++ CSV Parser Header               : Rakesh G. Karanth
 
 C++ Data Pre-Processor Header       : Max Yendall & Georgia Clark
 
-Python Cosine Similarity & Cluster Algorithm           : Max Yendall & Georgia Clark
+Python Cosine/Semantic Similarity & Cluster Algorithm           : Max Yendall & Georgia Clark
 
 
 TODO:
