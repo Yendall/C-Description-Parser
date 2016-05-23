@@ -14,4 +14,7 @@ TODO:
 2. Create vectors with combined words from the data set for each field. ✓
 3. Compute the Cosine Similarity between data sets ✓
 4. Normalize the Cosine Similarity and cluster it as a distance metric ✓
-5. Tag untagged data based on Cosine Distance Metric
+5. Tag untagged data based on Cosine Distance Metric ✓
+6. Compute the Semantic Similarity between data sets ✓
+7. Normalize the Semantic Similarity and cluster it as a distance metric
+8. Tag untagged data based on Semantic Similarity Metric
