@@ -1,6 +1,7 @@
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn import manifold
 
 reader = csv.reader(open("semantic_similarity_matrix_reduced/matrix.csv","r"),delimiter=',')
@@ -12,13 +13,11 @@ for d in data:
     print "Row: ",count,d[count]
     dists.append(map(float,d[0:-1]))
     count += 1
-
-adist = np.array(dists)
-amax = np.amax(dists)
-adist /= amax
+vect = TfidfVectorizer(min_df=1)
+tfidf = vect.fit_transform(dists)
 
 mds = manifold.MDS(n_components=2, dissimilarity="precomputed",random_state=6)
-results = mds.fit(adist.astype(np.float64))
+results = mds.fit(tfidf * tfidf.T).A
 
 coords = results.embedding_
 
