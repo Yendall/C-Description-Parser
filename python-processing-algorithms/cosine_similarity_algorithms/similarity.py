@@ -1,9 +1,11 @@
+from __future__ import print_function
 import os
 import csv
 import scipy
 import glob
 import numpy as np
 import matplotlib.pyplot as plt
+
 
 from sklearn.manifold import MDS
 from sklearn.feature_extraction.text import CountVectorizer
@@ -91,7 +93,7 @@ def get_tag(id):
 def get_tag_set(id):
     tag_list = []
     file_name = id + '.csv'
-    with open('../data/data_tags/' + file_name, 'rb') as csvfile:
+    with open('../../data/data_tags/' + file_name, 'rb') as csvfile:
         reader = csv.reader(csvfile,delimiter=',')
         for row in reader:
             tag_list.append(row)
@@ -114,7 +116,7 @@ def calculate_and_cluster():
     ptr = ""
 
     # Parse the CSV file (this will be denoted by a string variable)
-    with open('../data/sets/complete_set.csv','rb') as csvfile:
+    with open('../../data/sets/complete_set.csv','rb') as csvfile:
         reader = csv.reader(csvfile,delimiter=',')
         for row in reader:
             data_list[counter] = ''.join(row)
@@ -156,16 +158,16 @@ def calculate_and_cluster():
     dataNodes = []
     for x in range(0,len(data_list)):
         dataNodes.append(data_list[x])
+
     vect = TfidfVectorizer(min_df=1)
     tfidf = vect.fit_transform(dataNodes)
-    
-    for sim in (tfidf * tfidf.T).A:
-        print sim
     # N Components: plotting points in a two-dimensional plane
     # Dissimilirity: "precomputed" because of the Distance Matrix
     # Random state is fixed so we can reproduce the plot.
     mds = MDS(n_components=2, dissimilarity="precomputed", random_state=1)
-
+    _file = open("cosine_matrix.txt","w+")
+    #np.savetxt(_file,((tfidf * tfidf.T).A))
+    print ((tfidf * tfidf.T).A,file = _file)
     pos = mds.fit_transform((tfidf * tfidf.T).A)  # shape (n_components, n_samples)
     xs, ys = pos[:, 0], pos[:, 1]
 

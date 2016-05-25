@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7dbdde35-a479-420b-84ac-6a5ee6a2125d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/idv_data/data_set/1_Tagged.txt" afterPath="$PROJECT_DIR$/data/idv_data/data_set/1_Tagged.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms/similarity.py" afterPath="$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms/similarity.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_REST_similarity.py" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_REST_similarity.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/0.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/0.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/1.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/1.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/10.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/10.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/100.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/100.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/101.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/101.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/102.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/102.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/103.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/103.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/104.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/104.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/105.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/105.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/106.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/106.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/107.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/107.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/108.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/108.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/109.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/109.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/11.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/11.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/110.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/110.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/111.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/111.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/112.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/112.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/113.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/113.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/114.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/114.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/115.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/115.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/116.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/116.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/117.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/117.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/118.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/118.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/119.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/119.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/12.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/12.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/120.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/120.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/121.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/121.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/122.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/122.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/123.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/123.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/124.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/124.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/125.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/125.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/126.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/126.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/127.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/127.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/128.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/128.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/129.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/129.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/13.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/13.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/130.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/130.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/131.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/131.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/132.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/132.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/133.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/133.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/134.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/134.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/135.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/135.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/136.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/136.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/137.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/137.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/138.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/138.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/139.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/139.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/14.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/14.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/140.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/140.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/141.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/141.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/142.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/142.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/143.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/143.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/144.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/144.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/145.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/145.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/146.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/146.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/147.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/147.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/148.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/148.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/149.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/149.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/15.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/15.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/150.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/150.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/151.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/151.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/152.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/152.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/153.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/153.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/154.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/154.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/155.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/155.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/156.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/156.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/157.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/157.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/158.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/158.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/159.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/159.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/16.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/16.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/160.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/160.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/161.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/161.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/162.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/162.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/163.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/163.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/164.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/164.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/165.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/165.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/166.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/166.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/167.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/167.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/168.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/168.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/169.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/169.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/17.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/17.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/170.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/170.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/171.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/171.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/172.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/172.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/173.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/173.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/174.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/174.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/175.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/175.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/176.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/176.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/177.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/177.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/178.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/178.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/179.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/179.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/18.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/18.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/180.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/180.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/181.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/181.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/182.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/182.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/183.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/183.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/184.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/184.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/185.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/185.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/186.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/186.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/187.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/187.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/188.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/188.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/189.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/189.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/19.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/19.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/190.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/190.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/191.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/191.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/192.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/192.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/193.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/193.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/194.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/194.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/195.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/195.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/196.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/196.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/197.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/197.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/198.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/198.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/199.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/199.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/2.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/20.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/20.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/200.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/200.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/201.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/201.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/202.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/202.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/203.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/203.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/204.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/204.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/205.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/205.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/206.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/206.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/207.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/207.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/208.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/208.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/209.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/209.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/21.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/21.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/210.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/210.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/211.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/211.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/212.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/212.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/213.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/213.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/214.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/214.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/215.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/215.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/216.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/216.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/217.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/217.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/218.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/218.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/219.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/219.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/22.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/22.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/220.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/220.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/221.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/221.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/222.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/222.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/223.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/223.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/224.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/224.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/225.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/225.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/226.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/226.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/227.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/227.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/228.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/228.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/229.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/229.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/23.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/23.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/230.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/230.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/231.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/231.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/232.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/232.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/233.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/233.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/234.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/234.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/235.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/235.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/236.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/236.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/237.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/237.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/238.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/238.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/239.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/239.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/24.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/24.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/240.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/240.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/241.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/241.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/242.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/242.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/243.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/243.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/244.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/244.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/245.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/245.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/246.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/246.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/247.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/247.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/248.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/248.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/249.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/249.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/25.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/25.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/250.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/250.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/251.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/251.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/252.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/252.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/253.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/253.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/254.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/254.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/26.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/26.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/27.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/27.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/28.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/28.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/29.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/29.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/3.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/30.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/30.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/31.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/31.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/32.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/32.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/33.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/33.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/34.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/34.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/35.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/35.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/36.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/36.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/37.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/37.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/38.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/38.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/39.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/39.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/4.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/4.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/40.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/40.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/41.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/41.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/42.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/42.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/43.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/43.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/44.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/44.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/45.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/45.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/46.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/46.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/47.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/47.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/48.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/48.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/49.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/49.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/5.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/5.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/50.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/50.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/51.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/51.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/52.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/52.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/53.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/53.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/54.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/54.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/55.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/55.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/56.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/56.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/57.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/57.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/58.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/58.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/59.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/59.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/6.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/6.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/60.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/60.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/61.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/61.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/62.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/62.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/63.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/63.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/64.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/64.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/65.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/65.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/66.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/66.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/67.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/67.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/68.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/68.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/69.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/69.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/7.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/7.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/70.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/70.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/71.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/71.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/72.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/72.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/73.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/73.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/74.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/74.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/75.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/75.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/76.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/76.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/77.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/77.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/78.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/78.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/79.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/79.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/8.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/8.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/80.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/80.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/81.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/81.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/82.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/82.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/83.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/83.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/84.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/84.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/85.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/85.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/86.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/86.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/87.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/87.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/88.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/88.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/89.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/89.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/9.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/9.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/90.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/90.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/91.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/91.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/92.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/92.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/93.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/93.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/94.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/94.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/95.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/95.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/96.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/96.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/97.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/97.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/98.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/98.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/99.txt" afterPath="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/99.txt" />
+    </list>
+    <ignored path="C-Description-Parser.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="C-Description-Parser" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="matrix.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/matrix.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="similarity.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms/similarity.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2508">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="semantic_REST_similarity.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_REST_similarity.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="930">
+              <caret line="66" column="56" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cosine_matrix.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms/cosine_matrix.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/numpy.py" />
+        <option value="$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms/matrix.csv" />
+        <option value="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/matrix.csv" />
+        <option value="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/3.csv" />
+        <option value="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/0.txt" />
+        <option value="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/255.txt" />
+        <option value="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/matrix_to_array.py" />
+        <option value="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_plot.py" />
+        <option value="$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms/similarity.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1270" />
+    <option name="height" value="702" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="C-Description-Parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="C-Description-Parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="C-Description-Parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="C-Description-Parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="C-Description-Parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python-processing-algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="C-Description-Parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="C-Description-Parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python-processing-algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="semantic_similarity_algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="C-Description-Parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="C-Description-Parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="python-processing-algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cosine_similarity_algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/backup_matrix" />
+      <recent name="$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="C-Description-Parser" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="C-Description-Parser" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="C-Description-Parser" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="C-Description-Parser" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="C-Description-Parser" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="C-Description-Parser" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="C-Description-Parser" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7dbdde35-a479-420b-84ac-6a5ee6a2125d" name="Default" comment="" />
+      <created>1464076427618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1464076427618</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1270" height="702" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24739791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295082" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/matrix_to_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/matrix.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3645">
+          <caret line="243" column="0" selection-start-line="243" selection-start-column="0" selection-end-line="243" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/numpy.py" />
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms/cosine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms/matrix.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3810">
+          <caret line="254" column="9" selection-start-line="254" selection-start-column="9" selection-end-line="254" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/221.csv" />
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/backup_matrix/matrix.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/58.csv" />
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/4.csv" />
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/5.csv" />
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/255.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix/0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/254.csv" />
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/3.csv" />
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/2.csv" />
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/1.csv" />
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/0.csv" />
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/255.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1278" selection-start-line="0" selection-start-column="1278" selection-end-line="0" selection-end-column="1278" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/253.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/254.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/backup_semantic_files/76.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/matrix_to_array.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms/cosine_matrix.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_REST_similarity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="930">
+          <caret line="66" column="56" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/semantic_similarity_algorithms/semantic_similarity_matrix_reduced/matrix.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python-processing-algorithms/cosine_similarity_algorithms/similarity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2508">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

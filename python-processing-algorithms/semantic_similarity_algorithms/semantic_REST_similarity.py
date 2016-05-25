@@ -45,11 +45,6 @@ def harvester(text, case):
     response = sss(str(X), text)
     return response
 
-def testAPI(index):
-    response = sss("bike","car")
-    print response
-    Matrix[str(index)] = response
-
 # Start the main function when the program begins
 if __name__ == "__main__":
     # Define stdout
