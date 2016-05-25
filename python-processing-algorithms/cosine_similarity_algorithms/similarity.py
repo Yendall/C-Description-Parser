@@ -1,9 +1,9 @@
-from __future__ import print_function
 import os
 import csv
 import scipy
 import glob
 import numpy as np
+from numpy import genfromtxt
 import matplotlib.pyplot as plt
 
 
@@ -27,6 +27,8 @@ def rename_file(old_filename,new_filename):
         os.rename(old_file,new_file)
     
 
+def symmetrize(a):
+    return a + a.T - np.diag(a.diagonal())
 # Obtain colour from the given ID
 # @params: id : String
 # @return: Colour as a string
@@ -158,18 +160,20 @@ def calculate_and_cluster():
     dataNodes = []
     for x in range(0,len(data_list)):
         dataNodes.append(data_list[x])
-
     vect = TfidfVectorizer(min_df=1)
+
     tfidf = vect.fit_transform(dataNodes)
+    X = genfromtxt('../semantic_similarity_algorithms/semantic_similarity_matrix/matrix.csv', delimiter=',')
+    X = symmetrize(X)
+    print (X.transpose() == X).all()
     # N Components: plotting points in a two-dimensional plane
     # Dissimilirity: "precomputed" because of the Distance Matrix
     # Random state is fixed so we can reproduce the plot.
     mds = MDS(n_components=2, dissimilarity="precomputed", random_state=1)
-    _file = open("cosine_matrix.txt","w+")
-    #np.savetxt(_file,((tfidf * tfidf.T).A))
-    print ((tfidf * tfidf.T).A,file = _file)
-    pos = mds.fit_transform((tfidf * tfidf.T).A)  # shape (n_components, n_samples)
+    mds.fit(X.astype(np.float64))
+    pos = mds.fit_transform(X)  # shape (n_components, n_samples)
     xs, ys = pos[:, 0], pos[:, 1]
+
 
     # Set figure size to have dimensions of at least 15 inches for the width.
     # Height can be scaled accordingly.
@@ -182,7 +186,7 @@ def calculate_and_cluster():
     
     for x, y, name in zip(xs, ys, names):
         plt.scatter(x, y, s=100,c=get_colour_tag(name.split('_',1)[1]), label = name.split('_',1)[1])
-        plt.text(x,y,name.split('_',1)[0])
+        #plt.text(x,y,name.split('_',1)[0])
     handles, labels = plt.gca().get_legend_handles_labels()
     by_label = OrderedDict(zip(labels, handles))
     legend = plt.legend(by_label.values(), by_label.keys(),loc='lower center',ncol=4,bbox_to_anchor=(0.5, -0.6))

@@ -1,23 +1,26 @@
 import networkx as nx
 import numpy as np
+import pylab as plt
+from numpy import genfromtxt
 import string
-import pygraphviz
 from networkx.drawing.nx_agraph import to_agraph
 
-dt = [('len', float)]
-A = np.array([(0, 0.3, 0.4, 0.7),
-               (0.3, 0, 0.9, 0.2),
-               (0.4, 0.9, 0, 0.1),
-               (0.7, 0.2, 0.1, 0)
-               ])*10
-A = A.view(dt)
+# Create a Graph
+G = nx.Graph()
 
-G = nx.from_numpy_matrix(A)
-G = nx.relabel_nodes(G, dict(zip(range(len(G.nodes())), string.ascii_uppercase)))
+# Distance Matrix
+#X = genfromtxt('matrix.csv',delimiter=',')
+#D = 1 - X
+#D *= 10
+D = [ [0.5,1], [1,0.5]]
+labels = {}
+for n in range(len(D)):
+    for m in range(len(D)-(n+1)):
+        G.add_edge(n,n+m+1)
+        labels[ (n,n+m+1)] = str(D[n][n+m+1])
 
-G = to_agraph(G)
+pos = nx.spring_layout(G)
 
-G.node_attr.update(color="red", style="filled")
-G.edge_attr.update(color="blue", width="2.0")
-
-G.draw('/tmp/out.png', format='png', prog='neato')
+nx.draw(G,pos)
+nx.draw_networkx_edge_labels(G,pos,edge_labels=labels,font_size=30)
+plt.show()
