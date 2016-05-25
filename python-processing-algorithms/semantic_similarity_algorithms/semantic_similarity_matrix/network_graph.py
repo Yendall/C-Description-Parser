@@ -1,6 +1,8 @@
 import networkx as nx
 import numpy as np
 import string
+import pygraphviz
+from networkx.drawing.nx_agraph import to_agraph
 
 dt = [('len', float)]
 A = np.array([(0, 0.3, 0.4, 0.7),
@@ -13,7 +15,7 @@ A = A.view(dt)
 G = nx.from_numpy_matrix(A)
 G = nx.relabel_nodes(G, dict(zip(range(len(G.nodes())), string.ascii_uppercase)))
 
-G = nx.to_agraph(G)
+G = to_agraph(G)
 
 G.node_attr.update(color="red", style="filled")
 G.edge_attr.update(color="blue", width="2.0")
