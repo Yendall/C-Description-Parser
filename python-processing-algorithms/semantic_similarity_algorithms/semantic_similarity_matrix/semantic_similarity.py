@@ -1,30 +1,26 @@
 import os
 import csv
 import numpy as np
-from numpy import genfromtxt
 import matplotlib.pyplot as plt
-
+from numpy import genfromtxt
 from sklearn.manifold import MDS
-from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.cluster.hierarchy import ward, dendrogram
 from collections import OrderedDict
 
-# Lists for storing the data
+# Lists for storing the data as globals (this makes referencing easier)
+global names
 global data_list
 global data_tag_map
 global matrix_list
 global data_tagged_list
-data_list           = {}
-data_tag_map        = {}
-data_tagged_list    = {}
-matrix_list         = []
 
 # Tag the nearest neighbour to a node and update the global map
 # @params: index
 # @return: tagged set
 def tag_nearest_neighbour(index):
+    # Global references
     global matrix_list
-
+    global names
     # Track semantic measurement
     semantic_measure = 0.0
     # Track current row ID
@@ -38,23 +34,35 @@ def tag_nearest_neighbour(index):
         # Assign the semantic measure. Ensure that the element is tagged because we can't inherit from
         # untagged nodes
         if (x != 1.0) and (x > semantic_measure) and get_tagged(str(count)):
+            # Set semantic measurement
             semantic_measure = x
+            # Set current row
             row_id = count
+            # Split the tagged data into just the ID so it can be compared to the tag map
             split = data_list[row_id].split(" ")[-1:]
-
+            # Set the node as tagged
             data_tagged_list[index] = True
+            # Set the new tag map with updated values for inheritence
             data_tag_map[index] = data_tag_map[split[0]]
-            print semantic_measure
-            print data_tagged_list[index]
-            print data_tag_map[index]
-            print str(index) + " is now tagged"
+            # Open a new file to write to that shows the new tag set for the particular data set
+            file = open('../../../data/idv_data/data_set/data_tagged/'+str(index)+'.txt', 'w')
+
+            for tags in data_tag_map[index]:
+                for x in tags:
+                    print x
+            # Fill the file so we know which tags the new data node has
+            file.write(str(data_tag_map[index]))
+            # Update the named index for the MDS cluster and Dendrogram
+            names[index] = str(index) + '_' + 'Tagged'
+            # Close file for memory handling
+            file.close()
         count += 1
 
 # Rename a file if it exists. Replace it with the new filename passed in
 # @params: old_filename: String, new_filename : String
 # @return: void
 def rename_file(old_filename, new_filename):
-    path = '../data/idv_data/data_set/'
+    path = '../../../data/idv_data/data_set/'
     if os.path.isfile(path + old_filename):
         old_file = path + old_filename
         new_file = path + new_filename
@@ -149,16 +157,23 @@ def get_tag_set(id):
     return tag_list
 
 
-# Calculate the Cosine Similairity, normalize the values into a distance metric in the form of
+# Read semantic similarity as matrix from matrix.csv that the Semantic REST Parser generated as
 # a distance matrix. Then begin Multi-Dimensional Clustering given the distance matrix, with
 # pre-computed parameters which will be used to generate a Scatter Plot and Dendrogram.
 # @return: Scatter Plot and Dendogram generated in Matplotlib.pyplot
 def calculate_and_cluster():
 
+    global names
     global data_list
     global data_tag_map
     global matrix_list
     global data_tagged_list
+
+    data_list = {}
+    data_tag_map = {}
+    data_tagged_list = {}
+    matrix_list = []
+
     counter = 0
     # Parse the CSV file (this will be denoted by a string variable)
     with open('../../../data/sets/complete_set.csv', 'rb') as csvfile:
@@ -196,9 +211,6 @@ def calculate_and_cluster():
         rename_file(file_old, file_new)
         counter += 1
 
-    #print data_tag_map
-    #print data_tagged_list
-
     dataNodes = []
     for x in range(0, len(data_list)):
         dataNodes.append(data_list[x])
@@ -216,6 +228,7 @@ def calculate_and_cluster():
         tagged = get_tagged(str(x))
         if(not tagged):
             tag_nearest_neighbour(x)
+
 
     # Check symmetry
     print "Symmetric? " + str((X.transpose() == X).all())
@@ -238,7 +251,7 @@ def calculate_and_cluster():
 
     for x, y, name in zip(xs, ys, names):
         plt.scatter(x, y, s=100, c=get_colour_tag(name.split('_', 1)[1]), label=name.split('_', 1)[1])
-        plt.text(x,y,name.split('_',1)[0])
+        #plt.text(x,y,name.split('_',1)[0])
     handles, labels = plt.gca().get_legend_handles_labels()
     by_label = OrderedDict(zip(labels, handles))
     legend = plt.legend(by_label.values(), by_label.keys(), loc='lower center', ncol=4, bbox_to_anchor=(0.5, -0.6))

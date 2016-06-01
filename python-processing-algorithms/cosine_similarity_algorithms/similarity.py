@@ -95,7 +95,7 @@ def get_tag(id):
 def get_tag_set(id):
     tag_list = []
     file_name = id + '.csv'
-    with open('../../data/data_tags/' + file_name, 'rb') as csvfile:
+    with open('../../data/data_tagged/' + file_name, 'rb') as csvfile:
         reader = csv.reader(csvfile,delimiter=',')
         for row in reader:
             tag_list.append(row)
