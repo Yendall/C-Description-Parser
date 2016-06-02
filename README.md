@@ -21,7 +21,7 @@ Pipeline:
 
 Usage:
 ------
-## C++ Pre-Processor:
+### C++ Pre-Processor:
 
 ##### Location:
 ###### Root Directory
@@ -30,15 +30,20 @@ Usage:
 ##### Usage:
 ###### ./data_parser --p
 
-## Python Semantic REST API:
+### Python Semantic REST API:
 
-##### Location:           /python-processing_algorithms/semantic_similarity_algorithms
-##### Usage:              python semantic_REST_similarity.py
+##### Location:
+###### /python-processing_algorithms/semantic_similarity_algorithms
+##### Usage:
+###### python semantic_REST_similarity.py
 
 ## Python Semantic Similarity Processor:
 
-##### Pre-Requisites:     Must have individual data files in CSV format (can be changed to suit implementation)
-##### Location:           /python-processing_algorithms/semantic_similarity_matrix
-##### Usage:              python semantic_similarity.py
+##### Pre-Requisites:
+###### Must have individual data files in CSV format (can be changed to suit implementation)
+##### Location:
+###### /python-processing_algorithms/semantic_similarity_matrix
+##### Usage:
+###### python semantic_similarity.py
 
 
