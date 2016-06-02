@@ -1,1 +1,1 @@
-[['201', '241', '251', '271']]
+['Food_&_Wine', 'For_Couples', 'Photography', 'Kids_Friendly']

@@ -40,13 +40,7 @@ void output_data()
         counter += 1;
         condensed_outputCSV.close();
     }
-    
-    /*for(const auto& word : combined_set)
-    {
-        combined_outputCSV << word << " "; 
-    }*/
-    
-    
+
     combined_outputCSV.close();
     
     condensed_map.clear();
@@ -229,11 +223,12 @@ void parse_data(std::string file)
 // @return: void
 void begin_analysis()
 {
-	// Begin parsing the determiner set
+	// Begin parsing the irrelevant vocabulary
 	determiner_set = parse_csv_file("data/sets/stop_words.csv");
+	// Parse the list of tags
     tag_list = parse_csv_file("data/sets/tag_set.csv");
     
-	// Parse Description Set
+	// Parse the complete set of data
     set_identifier = "description_set";
 	parse_data("../data/sets/complete_set.csv");
 }

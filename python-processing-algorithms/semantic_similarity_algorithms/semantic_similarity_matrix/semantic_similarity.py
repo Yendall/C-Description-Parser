@@ -27,7 +27,8 @@ def tag_nearest_neighbour(index):
     row_id = 0
     # Track the index of the current element in the matrix row
     count = 0
-
+    # Temporary tag array
+    temp_tags = []
     # Loop through the row of the index we are analysing
     for x in matrix_list[index]:
         # If the element is not itself or if the element is greater than the current semantic measure
@@ -49,13 +50,15 @@ def tag_nearest_neighbour(index):
 
             for tags in data_tag_map[index]:
                 for x in tags:
-                    print x
+                    temp_tags.append(get_tag(x))
             # Fill the file so we know which tags the new data node has
-            file.write(str(data_tag_map[index]))
+            file.write(str(temp_tags))
             # Update the named index for the MDS cluster and Dendrogram
             names[index] = str(index) + '_' + 'Tagged'
             # Close file for memory handling
             file.close()
+            # Clear the tag array
+            temp_tags = []
         count += 1
 
 # Rename a file if it exists. Replace it with the new filename passed in
@@ -245,16 +248,15 @@ def calculate_and_cluster():
     plt.figure(figsize=(15, 8))
     plt.subplot(211)
 
-    # Loop through the points, label approriately and scatter
+    # Loop through the points, label appropriately and scatter
     # Ensure figure size has enough room for legend plotting. Each plot must have a label.
     # In this case, label is the split value denoting the POI tag
-
     for x, y, name in zip(xs, ys, names):
         plt.scatter(x, y, s=100, c=get_colour_tag(name.split('_', 1)[1]), label=name.split('_', 1)[1])
         #plt.text(x,y,name.split('_',1)[0])
     handles, labels = plt.gca().get_legend_handles_labels()
     by_label = OrderedDict(zip(labels, handles))
-    legend = plt.legend(by_label.values(), by_label.keys(), loc='lower center', ncol=4, bbox_to_anchor=(0.5, -0.6))
+    plt.legend(by_label.values(), by_label.keys(), loc='lower center', ncol=4, bbox_to_anchor=(0.5, -0.6))
 
     plt.show()
 
