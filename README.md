@@ -8,7 +8,7 @@ Acknowledgements:
 ###### Max Yendall & Georgia Clark
 
 ##### Python Cosine/Semantic Similarity:
-###### Max Yendall & Georgia Clark
+###### Max Yendall & Georgia Clar
 
 
 Pipeline:
