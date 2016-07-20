@@ -40,7 +40,7 @@ Usage:
 ##### Usage:
 ###### python semantic_REST_similarity.py
 
-## Python Semantic Similarity Processor:
+### Python Semantic Similarity Processor:
 
 ##### Pre-Requisites:
 ###### Must have individual data files in CSV format (can be changed to suit implementation)
