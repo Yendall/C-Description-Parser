@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Yendall/Semantic-Machine-Learning/blob/master/Logo.png">
+  <img src="https://github.com/Yendall/Semantic-Machine-Learning/blob/master/Logo_Proper.png">
 </p>
 ------
 Acknowledgements:
