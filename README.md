@@ -1,4 +1,7 @@
-
+<p align="center">
+  <img src="https://github.com/Yendall/Semantic-Machine-Learning/blob/master/Logo.png">
+</p>
+------
 Acknowledgements:
 ------
 ##### C++ CSV Parser Header:
