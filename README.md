@@ -1,9 +1,13 @@
 <p align="center">
   <img src="https://github.com/Yendall/Semantic-Machine-Learning/blob/master/Logo_Proper.png">
 </p>
+
 ------
+
 Acknowledgements:
+
 ------
+
 ##### C++ CSV Parser Header:
 ###### Rakesh G. Karanth
 
@@ -15,7 +19,9 @@ Acknowledgements:
 
 
 Pipeline:
+
 ------
+
 1. Condense data down to meaningful words using filters and output the data into new condense_files ✓
 2. Create vectors with combined words from the data set for each field. ✓
 3. Compute the Cosine Similarity between data sets ✓
@@ -26,7 +32,9 @@ Pipeline:
 8. Tag untagged data based on Semantic Similarity Metric ✓
 
 Usage:
+
 ------
+
 ### C++ Pre-Processor:
 
 ##### Location:
